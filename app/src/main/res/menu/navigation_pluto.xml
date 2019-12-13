@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--
+        TODO: naam navigation_pluto aanpassen
+        TODO: typfout vraakteken corrigeren
+    -->
+
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/icon_planeet"
         android:title="@string/navi_home" />
-
-    <item
-        android:id="@+id/navigation_algemeen_plan"
-        android:icon="@drawable/icon_algemeen"
-        android:title="@string/navi_algemeen_plan" />
-
-    <item
-        android:id="@+id/navigation_algemeen_stand"
-        android:icon="@drawable/icon_algemeen"
-        android:title="@string/navi_algemeen_stand" />
 
     <item
         android:id="@+id/navigation_zwaarte"
