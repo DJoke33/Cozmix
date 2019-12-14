@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/stand_aarde_titel"
+        android:text="@string/aarde_statue_name"
         android:textSize="30sp"
         android:layout_marginTop="100dp"
         android:layout_marginStart="10dp"/>
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="380dp"
         android:layout_height="430dp"
-        android:text="@string/stand_aarde"
+        android:text="@string/aarde_statue_description"
         android:textSize="12.5sp"
         android:layout_marginTop="170dp"
         android:layout_marginStart="10dp"

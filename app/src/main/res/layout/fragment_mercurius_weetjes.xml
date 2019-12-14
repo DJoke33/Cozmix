@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_manen"
+                android:text="@string/trivia_moons"
                 android:textSize="20dp"/>
 
             <TextView
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_temp"
+                android:text="@string/trivia_temperature"
                 android:textSize="20dp"/>
 
             <TextView
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_dagnacht"
+                android:text="@string/trivia_length_day"
                 android:textSize="20dp" />
 
             <TextView
@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_omlooptijd"
+                android:text="@string/trivia_orbital_period"
                 android:textSize="20dp"/>
 
             <TextView
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_vliegtuig"
+                android:text="@string/trivia_travel_time_sun"
                 android:textSize="20dp" />
 
             <TextView

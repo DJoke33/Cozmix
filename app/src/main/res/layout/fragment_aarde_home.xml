@@ -12,52 +12,52 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/planet_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plan_aarde_titel"
             android:textSize="30sp" />
 
         <!-- TODO: check textview textsize and other properties (see HF Android p.202) -->
 
         <ImageView
+            android:id="@+id/planet_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/activity_margin"
-            android:src="@drawable/plan_aarde2" />
+            android:layout_marginTop="@dimen/activity_margin" />
 
         <TextView
+            android:id="@+id/planet_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/plan_aarde"
             android:textSize="14.5sp"
             android:layout_marginTop="@dimen/activity_margin"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <ImageView
+            android:id="@+id/planet_probe_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_margin"
-            android:src="@drawable/sonde_aarde"/>
+            android:layout_marginTop="@dimen/activity_margin" />
 
         <TextView
+            android:id="@+id/planet_statue_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stand_aarde_titel"
             android:layout_marginTop="@dimen/activity_margin"
             android:textSize="30sp" />
 
         <ImageView
+            android:id="@+id/planet_statue_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/activity_margin"
-            android:src="@drawable/stand_aarde" />
+            android:layout_marginTop="@dimen/activity_margin" />
 
         <TextView
+            android:id="@+id/planet_statue_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/stand_aarde"
             android:textSize="12.5sp"
             android:layout_marginTop="@dimen/activity_margin"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>

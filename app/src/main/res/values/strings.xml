@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- GENERAL APP TEXT -->
+    <string name="trivia_moons">Aantal manen</string>
+    <string name="trivia_temperature">Temperatuur</string>
+    <string name="trivia_length_day">Lengte van een dag</string>
+    <string name="trivia_orbital_period">Omlooptijd</string>
+    <string name="trivia_travel_time_sun">Vliegtuigvlucht (800km/h) naar de zon</string>
+
+
+    <!-- PLANET INFORMATION AND TEXT -->
+
+    <!-- Aarde -->
+    <string name="aarde_name">Aarde</string>
+    <string name="aarde_description">De aarde bevindt zich in de zogenaamde ‘leefbare zone’. Dit is het gebied omheen de zon waar de temperatuur net geschikt is, zodat er vloeibaar water voorkomt.\nWat afstand betreft zou de aarde het moeten stellen met een gemiddelde temperatuur van amper 5°, maar door de aanwezigheid van waterdamp in de atmosfeer, brengt het broeikaseffect dit op zowat 15°.\nHet meest vreemde aspect aan de aardse atmosfeer is de aanwezigheid van zuurstof. Voor het dierlijk leven absoluut noodzakelijk, maar in chemisch opzicht een zeer agressief goedje. Zonder de biologische processen van de plantenwereld, zou de voorraad zuurstof snel uitgeput zijn en zou er dus voor ons geen leefbare omgeving overblijven.\nDe uitgebreide ijzerkern zorgt voor een magnetisch veld. Dit biedt ons niet alleen het gebruik van een kompas, maar belet ook schadelijke straling uit het heelal om ons gevoelige weefsel aan te tasten.\nEn hoe vreemd het ook moge klinken: de aanwezigheid van de maan is van het grootste belang voor ons voortbestaan. \n Onze nachtwachter biedt de stand van de aardas voldoende stabiliteit, zodat de seizoenen op aarde ook over langere tijdsperioden min of meer standvastig zijn.</string>
+
+    <string name="aarde_statue_name">Gaia met levensboom</string>
+    <string name="aarde_statue_description">Volgens de antieke mythologie stond de Chaos aan het begin van alle dingen. In die Chaos bestonden enkel aarde, water, lucht en vuur.\nUit die vormeloze leegte ontstonden Gaia, de Aarde, de donkere Tartarus, de afgrond onder de aarde en Eros, de universele liefde. Gaia bracht zee en hemel voort. Dezen werden Pontus en Uranus genoemd.\nGaia werd door de universele liefde aangezet om zich te verbinden met zee en hemel en hieruit ontstonden de Titanen, de Cyclopen en de honderdarmige reuzen. Uranus kroonde zichzelf als Heer en is dus zo de vader van de twaalf geweldige Titanen, met onder andere Neptunus en Saturnus.\nDeze Titanen zouden later de oermoeders en -vaders worden van de godengeslachten. Uranus voelde zich bedreigd door zijn zonen, de Cyclopen en verbande hen naar de onderwereld. Tevergeefs probeert Gaia haar kinderen tegen de woede van Uranus te beschermen.\nZe roept de Titanen op om hun broers te helpen, maar alleen Saturnus waagt het voor haar op te komen. Tenslotte verslaat hij ook zijn vader en kroont zichzelf tot koning.\nVader Uranus spreekt een vloek over zijn zoon uit, dat hem ooit hetzelfde lot zal beschoren zijn door toedoen van zijn kinderen. Sindsdien leefde Saturnus in angst en telkens als zijn gemalin, Ops, hem een kind baart, vreet hij het op.\nGaia geeft haar de raad om haar volgende kind te verstoppen en zo ontsnapt Jupiter aan het lot van zijn broers en zussen. Met de hulp van de vrijgelaten Cyclopen en de honderdarmige reuzen, dwingt Jupiter zijn vader om de onsterfelijke kinderen die hij verslonden had, terug te geven aan de wereld.</string>
+
+    <string name="aarde_moons">1</string>
+    <string name="aarde_temperature">-88°C tot 58°C</string>
+    <string name="aarde_length_day">23u56m</string>
+    <string name="aarde_orbital_period">365 d</string>
+    <string name="aarde_travel_time_sun">21 j</string>
+
+
+
+    <!-- TODO: alles hieronder nog herwerken -->
+
     //Niet veranderen!/////////////////////////////////////////////////////////////////////////////
     <string name="app_name">Cozmix</string>
     <string name="title_activity_planeet_ijsdwergen">planeetIjsdwergen</string>
@@ -78,18 +105,6 @@
     <string name="login_edittext_gewicht">Gewicht</string>
 
     //Weetjes pagina //////////////////////////////////////////////////////////////////////////////
-
-    <string name="weetje_omlooptijd">Omlooptijd</string>
-    <string name="weetje_vliegtuig">Vliegtuig vlucht (800km/h) naar de zon</string>
-    <string name="weetje_manen">Aantal manen</string>
-    <string name="weetje_temp">Temperatuur</string>
-    <string name="weetje_dagnacht">Hoelang duurt \n1 dag en nacht</string>
-
-    <string name="weetje_omlooptijd_aarde">365d</string>
-    <string name="weetje_vliegtuid_aarde">21j</string>
-    <string name="weetje_manen_aarde">1</string>
-    <string name="weetje_temp_aarde">58°C -88°C</string>
-    <string name="weetje_dagnacht_aarde">23u en 56m</string>
 
     <string name="weetje_omlooptijd_ijsdwergen">4j 7m 6d</string>
     <string name="weetje_vliegtuid_ijsdwergen">59j</string>
@@ -172,11 +187,6 @@
     <string name="plan_venus">Venus wordt ook wel eens de zusterplaneet van de aarde genoemd. Wat grootte en samenstelling betreft, vertonen beide planeten inderdaad enige overeenkomst. Venus is net als Mercurius een zogenaamde binnenplaneet. Ze beweegt dichter bij de zon dan de aarde en daarom kunnen we haar enkel in de buurt van de zon zien. Het meest verbazende aan de gesluierde planeet is haar dichte atmosfeer.\nDeze bestaat voor het grootste deel uit CO2. Dit houdt de zonnestraling vast waardoor er aan het oppervlak een uit de hand gelopen broeikaseffect optreedt. De temperaturen kunnen hier zelfs hoger oplopen dan bij Mercurius. De luchtdruk is even groot als de druk op duizend meter diepte in een aardse oceaan. Waarnemingen van 10 tot 15 jaar geleden, vertellen ons dat er vulkanisme op Venus voorkwam, misschien zelfs nog tot op de dag van vandaag.</string>
     <string name="stand_venus_titel">Godin van de liefde</string>
     <string name="stand_venus">Venus is algemeen gekend als de godin van de liefde. Maar zoals bij vele verhalen uit de oude mythologie, is ze allesbehalve voortgekomen uit liefde. Het verhaal vertelt hoe Chronos, de Griekse Saturnus, in een verschrikkelijke strijd met zijn vader Oceanus verwikkeld was. Met de sikkel die hij van zijn moeder Gaia gekregen had, ontmande Saturnus zijn eigen vader.\nHij wierp het afgesneden lichaamsdeel in de oceaan en het nog aanwezige zaad verspreidde zich uiteindelijk in een cirkel van wit schuim. Uit dit schuim werd tenslotte Venus geboren. Haar Griekse naam, Aphrodite, betekent letterlijk "uit schuim geboren". Hoewel haar voornaamste werkterrein het "zoete der liefde" is, heeft zij toch evenveel miserie en bloedvergieten veroorzaakt als veel van de andere onsterfelijken.  </string>
-
-    <string name="plan_aarde_titel">Aarde</string>
-    <string name="plan_aarde">De aarde bevindt zich in de zogenaamde ‘leefbare zone’. Dit is het gebied omheen de zon waar de temperatuur net geschikt is, zodat er vloeibaar water voorkomt.\nWat afstand betreft zou de aarde het moeten stellen met een gemiddelde temperatuur van amper 5°, maar door de aanwezigheid van waterdamp in de atmosfeer, brengt het broeikaseffect dit op zowat 15°.\nHet meest vreemde aspect aan de aardse atmosfeer is de aanwezigheid van zuurstof. Voor het dierlijk leven absoluut noodzakelijk, maar in chemisch opzicht een zeer agressief goedje. Zonder de biologische processen van de plantenwereld, zou de voorraad zuurstof snel uitgeput zijn en zou er dus voor ons geen leefbare omgeving overblijven.\nDe uitgebreide ijzerkern zorgt voor een magnetisch veld. Dit biedt ons niet alleen het gebruik van een kompas, maar belet ook schadelijke straling uit het heelal om ons gevoelige weefsel aan te tasten.\nEn hoe vreemd het ook moge klinken: de aanwezigheid van de maan is van het grootste belang voor ons voortbestaan. \n Onze nachtwachter biedt de stand van de aardas voldoende stabiliteit, zodat de seizoenen op aarde ook over langere tijdsperioden min of meer standvastig zijn.</string>
-    <string name="stand_aarde_titel">Gaia met levensboom</string>
-    <string name="stand_aarde">Volgens de antieke mythologie stond de Chaos aan het begin van alle dingen. In die Chaos bestonden enkel aarde, water, lucht en vuur.\nUit die vormeloze leegte ontstonden Gaia, de Aarde, de donkere Tartarus, de afgrond onder de aarde en Eros, de universele liefde. Gaia bracht zee en hemel voort. Dezen werden Pontus en Uranus genoemd.\nGaia werd door de universele liefde aangezet om zich te verbinden met zee en hemel en hieruit ontstonden de Titanen, de Cyclopen en de honderdarmige reuzen. Uranus kroonde zichzelf als Heer en is dus zo de vader van de twaalf geweldige Titanen, met onder andere Neptunus en Saturnus.\nDeze Titanen zouden later de oermoeders en -vaders worden van de godengeslachten. Uranus voelde zich bedreigd door zijn zonen, de Cyclopen en verbande hen naar de onderwereld. Tevergeefs probeert Gaia haar kinderen tegen de woede van Uranus te beschermen.\nZe roept de Titanen op om hun broers te helpen, maar alleen Saturnus waagt het voor haar op te komen. Tenslotte verslaat hij ook zijn vader en kroont zichzelf tot koning.\nVader Uranus spreekt een vloek over zijn zoon uit, dat hem ooit hetzelfde lot zal beschoren zijn door toedoen van zijn kinderen. Sindsdien leefde Saturnus in angst en telkens als zijn gemalin, Ops, hem een kind baart, vreet hij het op.\nGaia geeft haar de raad om haar volgende kind te verstoppen en zo ontsnapt Jupiter aan het lot van zijn broers en zussen. Met de hulp van de vrijgelaten Cyclopen en de honderdarmige reuzen, dwingt Jupiter zijn vader om de onsterfelijke kinderen die hij verslonden had, terug te geven aan de wereld.  </string>
 
     <string name="plan_mars_titel">Mars</string>
     <string name="plan_mars">De rode planeet Mars is maar half zo groot als onze aarde. Ze heeft haar kleur te danken aan het ijzer dat in de bodem voorkomt. In combinatie met de zuurstof in de dunne atmosfeer wordt roest geproduceerd. De meest recente onderzoeken van onze buurplaneet, bieden ons steeds meer bewijzen dat er vroeger vloeibaar water moet geweest zijn.\nWe kennen nog enkele reusachtige vulkanen die ooit voor voldoende luchtdruk moeten gezorgd hebben zodat er vloeibaar water kon bestaan. Tegenwoordig is de druk, amper 0,7% van de aardse, zo laag dat water er onmiddellijk zou verdampen. Er is nog geen sluitend bewijs, maar de onderzoekers geraken hoe langer hoe meer overtuigd van de aanwezigheid van grote hoeveelheden waterijs.\nDit gecombineerd met een temperatuur variërend van -80°C tot +20°C, maakt de zoektocht naar kiemen of fossielen van leven des te interessanter. Wordt ongetwijfeld vervolgd ...</string>

@@ -3,11 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="@dimen/activity_margin">
 
     <!-- TODO: check relevant text sizes -->
     <!-- TODO: check compatibility with android kitkat - API 19 -->
     <!-- TODO: adjust strings to be more reusable throughout different planets -->
+    <!-- TODO: titel toevoegen (in overeenstemming met gewicht-pagina en home-pagina -->
 
     <GridLayout
         android:layout_width="match_parent"
@@ -27,14 +28,14 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:gravity="center"
-            android:text="@string/weetje_manen" />
+            android:text="@string/trivia_moons" />
         <TextView
+            android:id="@+id/planet_moons"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/weetje_manen_aarde" />
+            android:gravity="center" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="100dp"
@@ -47,14 +48,14 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:gravity="center"
-            android:text="@string/weetje_temp" />
+            android:text="@string/trivia_temperature" />
         <TextView
+            android:id="@+id/planet_temperature"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/weetje_temp_aarde" />
+            android:gravity="center" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="100dp"
@@ -67,14 +68,14 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:gravity="center"
-            android:text="@string/weetje_dagnacht" />
+            android:text="@string/trivia_length_day" />
         <TextView
+            android:id="@+id/planet_length_day"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/weetje_dagnacht_aarde" />
+            android:gravity="center" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="100dp"
@@ -87,14 +88,14 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:gravity="center"
-            android:text="@string/weetje_omlooptijd" />
+            android:text="@string/trivia_orbital_period" />
         <TextView
+            android:id="@+id/planet_orbital_period"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/weetje_omlooptijd_aarde" />
+            android:gravity="center" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="100dp"
@@ -107,14 +108,14 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:gravity="center"
-            android:text="@string/weetje_vliegtuig" />
+            android:text="@string/trivia_travel_time_sun" />
         <TextView
+            android:id="@+id/planet_travel_time_sun"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/weetje_vliegtuid_aarde" />
+            android:gravity="center" />
 
     </GridLayout>
 </android.support.v4.widget.NestedScrollView>
