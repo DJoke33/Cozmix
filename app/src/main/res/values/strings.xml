@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- READ ME -->
+    <!-- Sommige leestekens hebben in de Android code een specifieke functie. Indien je deze in
+        een tekst of woord wil gebruiken, moeten deze voorafgegaan worden door het
+        escape-karakter: \ (backslash).
+
+        Dit is het geval voor volgende tekens:
+            ' (enkel aanhalingsteken)
+            " (dubbel aanhalingsteken)
+            < (kleiner dan)
+            > (groter dan)
+            & (ampersand)
+    -->
 
     <!-- APP TEKST -->
     <string name="trivia_moons">Aantal manen</string>
@@ -13,7 +25,7 @@
 
     <!-- Zon -->
     <string name="zon_name">De zon</string>
-    <string name="zon_description">De zon is een doodgewone ster, net zoals de vele andere die we 's nachts aan de hemel kunnen zien. Er zijn sterren die groter zijn en er zijn sterren die kleiner zijn dan onze zon. \n Maar in vergelijking met de planeten is de zon gigantisch groot. In de schaal die we hier gebruiken, zou ze een diameter van 8 m hebben, zowat half zo groot als het pleintje voor het kasteel. \n Aan de buitenkant heeft ze een verschroeiende temperatuur van 6000 °C maar naar het midden, loopt dit op tot een onvoorstelbare 15 miljoen °C. Deze hitte zorgt ervoor dat waterstof in de zon versmelt tot helium en hierbij komt een enorme hoeveelheid energie vrij. \n Dankzij deze energie kan het leven op aarde in stand gehouden worden. De zon bevat voldoende waterstof om het nog zo"n vijf miljard jaar uit te houden.\n  </string>
+    <string name="zon_description">De zon is een doodgewone ster, net zoals de vele andere die we \'s nachts aan de hemel kunnen zien. Er zijn sterren die groter zijn en er zijn sterren die kleiner zijn dan onze zon. \n Maar in vergelijking met de planeten is de zon gigantisch groot. In de schaal die we hier gebruiken, zou ze een diameter van 8 m hebben, zowat half zo groot als het pleintje voor het kasteel. \n Aan de buitenkant heeft ze een verschroeiende temperatuur van 6000 °C maar naar het midden, loopt dit op tot een onvoorstelbare 15 miljoen °C. Deze hitte zorgt ervoor dat waterstof in de zon versmelt tot helium en hierbij komt een enorme hoeveelheid energie vrij. \n Dankzij deze energie kan het leven op aarde in stand gehouden worden. De zon bevat voldoende waterstof om het nog zo"n vijf miljard jaar uit te houden.\n  </string>
     <string name="zon_statue_name">Vuurvogel</string>
     <string name="zon_statue_description">De zon wordt hier voorgesteld door de Vuurvogel. Dit is de mythische feniks, de vogel die zichzelf in vuur liet ten onder gaan om vervolgens te verrijzen uit zijn eigen as. Hierdoor is ze een symbool voor onsterfelijkheid, wederopstanding en het leven na de dood. Wanneer de vogel zijn einde voelt naderen, bouwt hij zich een nest met de fijnste aromatische houtsoorten, steekt dit in brand en wordt verteerd in de vlammen. Hieruit komt dan een nieuwe feniks tevoorschijn, vol van jeugdige kracht.  </string>
 
