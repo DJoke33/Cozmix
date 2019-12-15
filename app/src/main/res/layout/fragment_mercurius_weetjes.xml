@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/weetje_manen_mercurius"
+                android:text="@string/mercurius_moons"
                 android:textSize="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"/>
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
-                android:text="@string/weetje_temp_mercurius"
+                android:text="@string/mercurius_temperature"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -95,7 +95,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="10dp"
-                android:text="@string/weetje_dagnacht_mercurius"
+                android:text="@string/mercurius_length_day"
                 android:textSize="18dp" />
 
         </LinearLayout>
@@ -123,7 +123,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/weetje_omlooptijd_mercurius"
+                android:text="@string/mercurius_orbital_period"
                 android:textSize="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"/>
@@ -153,7 +153,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/weetje_vliegtuid_mercurius"
+                android:text="@string/mercurius_travel_time_sun"
                 android:textSize="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"/>

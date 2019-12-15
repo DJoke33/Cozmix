@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class planeetAarde_gewichtFragment extends Fragment implements View.OnFocusChangeListener{
+public class PlanetWeightFragment extends Fragment implements View.OnFocusChangeListener{
 
     int gewicht;
 
@@ -21,7 +21,7 @@ public class planeetAarde_gewichtFragment extends Fragment implements View.OnFoc
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_aarde_gewicht, null);
+        return inflater.inflate(R.layout.fragment_planet_weight, null);
 
 
     }

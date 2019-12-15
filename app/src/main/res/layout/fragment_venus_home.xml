@@ -18,20 +18,20 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:scaleType="fitXY"
-            android:src="@drawable/plan_venus2" />
+            android:src="@drawable/venus_image" />
 
         <ImageView
             android:layout_width="232dp"
             android:layout_height="303dp"
             android:layout_marginStart="190dp"
             android:layout_marginTop="0dp"
-            android:src="@drawable/stand_venus" />
+            android:src="@drawable/venus_standbeeld" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="300dp"
-            android:src="@drawable/sonde_venus"/>
+            android:src="@drawable/venus_sonde"/>
 
 
     </RelativeLayout>

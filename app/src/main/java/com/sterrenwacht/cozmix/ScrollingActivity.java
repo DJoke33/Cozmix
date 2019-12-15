@@ -10,26 +10,24 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 
-public class ScrollingActivity extends AppCompatActivity{
+public class ScrollingActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Status bar doorzichtbaar maken //////////////////////////////////////////////////////////////////////////////////////////
-
+        //Statusbar doorzichtig maken
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        //logo knop die doorverwijst naar de website ////////////////////////////////////////////////////////////////////////////////
-
+        // TODO: url cozmix elders plaatsen + FAB wissen of vervangen door iets beters
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabHome);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,61 +40,40 @@ public class ScrollingActivity extends AppCompatActivity{
                 }
             }
         });
+    }
 
-        //Knoppen die doorverwijzen naar de planeet paginas /////////////////////////////////////////////////////////////////////
-
-        final Button btnIjs = (Button)findViewById(R.id.btnIjs);
-        Button btnJupiter = (Button)findViewById(R.id.btnJupiter);
-        Button btnNeptunus = (Button)findViewById(R.id.btnNeptunus);
-        Button btnPluto = (Button)findViewById(R.id.btnPluto);
-        Button btnSaturnus = (Button)findViewById(R.id.btnSaturnus);
-        Button btnUranus = (Button)findViewById(R.id.btnUranus);
-        Button btnRest = (Button)findViewById(R.id.btnRest);
-
-        btnIjs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetIjsdwergen.class));
-            }
-        });
-        btnPluto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetPluto.class));
-            }
-        });
-        btnNeptunus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetNeptunus.class));
-            }
-        });
-        btnUranus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetUranus.class));
-            }
-        });
-        btnSaturnus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetSaturnus.class));
-            }
-        });
-        btnJupiter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, planeetJupiter.class));
-            }
-        });
-
-        btnRest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this, ScrollingActivityAndere.class));
-            }
-        });
-
-
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnInnerPlanets:
+                startActivity((new Intent(this, ScrollingActivityAndere.class)));
+                break;
+            case R.id.btnJupiter:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "jupiter"));
+                break;
+            case R.id.btnSaturnus:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "saturnus"));
+                break;
+            case R.id.btnUranus:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "uranus"));
+                break;
+            case R.id.btnNeptunus:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "neptunus"));
+                break;
+            case R.id.btnPluto:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "pluto"));
+                break;
+            case R.id.btnIjsdwergen:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "ijsdwergen"));
+                break;
+            default:
+                break;
+        }
     }
 }

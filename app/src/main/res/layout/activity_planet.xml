@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".planeetAarde">
+    tools:context=".PlanetActivity">
 
     <!-- TODO: Check height BottomNavigationView -->
     <!-- TODO: Navigation_pluto elimineren (bv. id = "bottom_navigation") -->
@@ -25,12 +25,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/image"
+            android:id="@+id/planet_background"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
             android:scaleType="centerCrop"
-            app:layout_collapseMode="parallax"
-            app:srcCompat="@drawable/plan_aarde" />
+            app:layout_collapseMode="parallax" />
 
         <FrameLayout
             android:id="@+id/planet_container"

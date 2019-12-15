@@ -10,8 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class planeetAarde_homeFragment extends Fragment {
+public class PlanetHomeFragment extends Fragment {
+
+    // TODO: pluto standbeeld is zelfde als aarde
+    // TODO: geen sonde zon? voorlopig als placeholder sonde mercurius gezet
+
+    String planetName;
 
     @Nullable
     @Override
@@ -19,29 +25,30 @@ public class planeetAarde_homeFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         // inflate fragment view
-        View view = inflater.inflate(R.layout.fragment_aarde_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_planet_home, container, false);
 
         // prep resource management
         Resources resources = getResources();
         String packageName = getActivity().getPackageName();
+        planetName = getArguments().getString("planet");
 
         // set image resources
         ((ImageView) view.findViewById(R.id.planet_image))
-                .setImageResource(resources.getIdentifier("plan_aarde2","drawable", packageName));
+                .setImageResource(resources.getIdentifier(planetName+"_image","drawable", packageName));
         ((ImageView) view.findViewById(R.id.planet_probe_image))
-                .setImageResource(resources.getIdentifier("sonde_aarde", "drawable", packageName));
+                .setImageResource(resources.getIdentifier(planetName+"_sonde", "drawable", packageName));
         ((ImageView) view.findViewById(R.id.planet_statue_image))
-                .setImageResource(resources.getIdentifier("aarde_statue_description", "drawable", packageName));
+                .setImageResource(resources.getIdentifier(planetName+"_standbeeld", "drawable", packageName));
 
         // set text resources
         ((TextView)view.findViewById(R.id.planet_name))
-                .setText(resources.getIdentifier("aarde_name", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_name", "string", packageName));
         ((TextView) view.findViewById(R.id.planet_description))
-                .setText(resources.getIdentifier("aarde_description", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_description", "string", packageName));
         ((TextView) view.findViewById(R.id.planet_statue_name))
-                .setText(resources.getIdentifier("aarde_statue_name", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_statue_name", "string", packageName));
         ((TextView) view.findViewById(R.id.planet_statue_description))
-                .setText(resources.getIdentifier("aarde_statue_description", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_statue_description", "string", packageName));
 
         return view;
     }

@@ -1,30 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- GENERAL APP TEXT -->
+    <!-- APP TEKST -->
     <string name="trivia_moons">Aantal manen</string>
     <string name="trivia_temperature">Temperatuur</string>
     <string name="trivia_length_day">Lengte van een dag</string>
     <string name="trivia_orbital_period">Omlooptijd</string>
-    <string name="trivia_travel_time_sun">Vliegtuigvlucht (800km/h) naar de zon</string>
+    <string name="trivia_travel_time_sun">Vliegtuigvlucht (800 km/h) naar de zon</string>
 
 
-    <!-- PLANET INFORMATION AND TEXT -->
+    <!-- PLANETEN: TEKST EN INFORMATION -->
+
+    <!-- Zon -->
+    <string name="zon_name">De zon</string>
+    <string name="zon_description">De zon is een doodgewone ster, net zoals de vele andere die we 's nachts aan de hemel kunnen zien. Er zijn sterren die groter zijn en er zijn sterren die kleiner zijn dan onze zon. \n Maar in vergelijking met de planeten is de zon gigantisch groot. In de schaal die we hier gebruiken, zou ze een diameter van 8 m hebben, zowat half zo groot als het pleintje voor het kasteel. \n Aan de buitenkant heeft ze een verschroeiende temperatuur van 6000 °C maar naar het midden, loopt dit op tot een onvoorstelbare 15 miljoen °C. Deze hitte zorgt ervoor dat waterstof in de zon versmelt tot helium en hierbij komt een enorme hoeveelheid energie vrij. \n Dankzij deze energie kan het leven op aarde in stand gehouden worden. De zon bevat voldoende waterstof om het nog zo"n vijf miljard jaar uit te houden.\n  </string>
+    <string name="zon_statue_name">Vuurvogel</string>
+    <string name="zon_statue_description">De zon wordt hier voorgesteld door de Vuurvogel. Dit is de mythische feniks, de vogel die zichzelf in vuur liet ten onder gaan om vervolgens te verrijzen uit zijn eigen as. Hierdoor is ze een symbool voor onsterfelijkheid, wederopstanding en het leven na de dood. Wanneer de vogel zijn einde voelt naderen, bouwt hij zich een nest met de fijnste aromatische houtsoorten, steekt dit in brand en wordt verteerd in de vlammen. Hieruit komt dan een nieuwe feniks tevoorschijn, vol van jeugdige kracht.  </string>
+
+    <string name="zon_moons">/</string>
+    <string name="zon_temperature">5505°C</string>
+    <string name="zon_length_day">27 dagen</string>
+    <string name="zon_orbital_period">/</string>
+    <string name="zon_travel_time_sun">/</string>
+
+    <!-- Mercurius -->
+    <string name="mercurius_name">Mercurius</string>
+    <string name="mercurius_description">Omdat Mercurius van alle planeten het dichtst bij de zon staat, heeft ze ook het minst tijd nodig voor een jaarbeweging. De baan is sterk elliptisch: de afstand tot de zon varieert daarom van 45 tot 70 miljoen kilometer.\nOmdat de planeet driemaal om haar as draait in dezelfde tijd die ze nodig heeft om twee keer om de zon te draaien, zijn er aan het oppervlak vreemde verschijnselen te zien. Op bepaalde plaatsen kan het zijn dat de zon twee keer per dag opkomt! De vreemde baan, de nabijheid bij de zon en het ontbreken van een atmosfeer zorgen ervoor dat de dagtemperatuur kan oplopen tot 430 graden Celsius.\n"s Nachts kan het dan weer afkoelen tot min 180 graden Celsius. Radarwaarnemingen tonen zelfs aan dat er in diepe kraters aan de polen mogelijk bevroren waterijs voorkomt.</string>
+    <string name="mercurius_statue_name">De behendige boodschapper</string>
+    <string name="mercurius_statue_description">Mercurius is de god van de handelaars en boodschapper van de goden. Daarnaast heeft hij nog een bijbaantje als god van de welsprekendheid, de uitvindingen, reizigers en dieven. De vleugeltjes aan zijn hoed en schoenen illustreren zijn taak als ijlbode of om zich als god van de dieven vlug uit de voeten te kunnen maken.\nHet lievelingsdier van Mercurius was de haan, een dier dat ook bekend staat om zijn functie als boodschapper. Denk maar aan het Bijbelverhaal waar de haan drie maal kraaide om één en ander duidelijk te maken. Mercurius was nog maar net geboren, of hij ging al aan de haal met een kudde koeien van Apollo.\nUit de ingewanden van de dieren fabriceerde hij de lier en kon het zo toch nog goed maken met de woedende Apollo.</string>
+
+    <string name="mercurius_moons">0</string>
+    <string name="mercurius_temperature">-180°C tot 430°C</string>
+    <string name="mercurius_length_day">58 dagen 15 uur</string>
+    <string name="mercurius_orbital_period">88 dagen</string>
+    <string name="mercurius_travel_time_sun">8 jaar</string>
+
+    <!-- Venus -->
+    <string name="venus_name">Venus</string>
+    <string name="venus_description">Venus wordt ook wel eens de zusterplaneet van de aarde genoemd. Wat grootte en samenstelling betreft, vertonen beide planeten inderdaad enige overeenkomst. Venus is net als Mercurius een zogenaamde binnenplaneet. Ze beweegt dichter bij de zon dan de aarde en daarom kunnen we haar enkel in de buurt van de zon zien. Het meest verbazende aan de gesluierde planeet is haar dichte atmosfeer.\nDeze bestaat voor het grootste deel uit CO2. Dit houdt de zonnestraling vast waardoor er aan het oppervlak een uit de hand gelopen broeikaseffect optreedt. De temperaturen kunnen hier zelfs hoger oplopen dan bij Mercurius. De luchtdruk is even groot als de druk op duizend meter diepte in een aardse oceaan. Waarnemingen van 10 tot 15 jaar geleden, vertellen ons dat er vulkanisme op Venus voorkwam, misschien zelfs nog tot op de dag van vandaag.</string>
+    <string name="venus_statue_name">Godin van de liefde</string>
+    <string name="venus_statue_description">Venus is algemeen gekend als de godin van de liefde. Maar zoals bij vele verhalen uit de oude mythologie, is ze allesbehalve voortgekomen uit liefde. Het verhaal vertelt hoe Chronos, de Griekse Saturnus, in een verschrikkelijke strijd met zijn vader Oceanus verwikkeld was. Met de sikkel die hij van zijn moeder Gaia gekregen had, ontmande Saturnus zijn eigen vader.\nHij wierp het afgesneden lichaamsdeel in de oceaan en het nog aanwezige zaad verspreidde zich uiteindelijk in een cirkel van wit schuim. Uit dit schuim werd tenslotte Venus geboren. Haar Griekse naam, Aphrodite, betekent letterlijk "uit schuim geboren". Hoewel haar voornaamste werkterrein het "zoete der liefde" is, heeft zij toch evenveel miserie en bloedvergieten veroorzaakt als veel van de andere onsterfelijken.</string>
+
+    <string name="venus_moons">0</string>
+    <string name="venus_temperature">460°C</string>
+    <string name="venus_length_day">243 dagen</string>
+    <string name="venus_orbital_period">225 dagen</string>
+    <string name="venus_travel_time_sun">15 jaar</string>
 
     <!-- Aarde -->
     <string name="aarde_name">Aarde</string>
     <string name="aarde_description">De aarde bevindt zich in de zogenaamde ‘leefbare zone’. Dit is het gebied omheen de zon waar de temperatuur net geschikt is, zodat er vloeibaar water voorkomt.\nWat afstand betreft zou de aarde het moeten stellen met een gemiddelde temperatuur van amper 5°, maar door de aanwezigheid van waterdamp in de atmosfeer, brengt het broeikaseffect dit op zowat 15°.\nHet meest vreemde aspect aan de aardse atmosfeer is de aanwezigheid van zuurstof. Voor het dierlijk leven absoluut noodzakelijk, maar in chemisch opzicht een zeer agressief goedje. Zonder de biologische processen van de plantenwereld, zou de voorraad zuurstof snel uitgeput zijn en zou er dus voor ons geen leefbare omgeving overblijven.\nDe uitgebreide ijzerkern zorgt voor een magnetisch veld. Dit biedt ons niet alleen het gebruik van een kompas, maar belet ook schadelijke straling uit het heelal om ons gevoelige weefsel aan te tasten.\nEn hoe vreemd het ook moge klinken: de aanwezigheid van de maan is van het grootste belang voor ons voortbestaan. \n Onze nachtwachter biedt de stand van de aardas voldoende stabiliteit, zodat de seizoenen op aarde ook over langere tijdsperioden min of meer standvastig zijn.</string>
-
     <string name="aarde_statue_name">Gaia met levensboom</string>
     <string name="aarde_statue_description">Volgens de antieke mythologie stond de Chaos aan het begin van alle dingen. In die Chaos bestonden enkel aarde, water, lucht en vuur.\nUit die vormeloze leegte ontstonden Gaia, de Aarde, de donkere Tartarus, de afgrond onder de aarde en Eros, de universele liefde. Gaia bracht zee en hemel voort. Dezen werden Pontus en Uranus genoemd.\nGaia werd door de universele liefde aangezet om zich te verbinden met zee en hemel en hieruit ontstonden de Titanen, de Cyclopen en de honderdarmige reuzen. Uranus kroonde zichzelf als Heer en is dus zo de vader van de twaalf geweldige Titanen, met onder andere Neptunus en Saturnus.\nDeze Titanen zouden later de oermoeders en -vaders worden van de godengeslachten. Uranus voelde zich bedreigd door zijn zonen, de Cyclopen en verbande hen naar de onderwereld. Tevergeefs probeert Gaia haar kinderen tegen de woede van Uranus te beschermen.\nZe roept de Titanen op om hun broers te helpen, maar alleen Saturnus waagt het voor haar op te komen. Tenslotte verslaat hij ook zijn vader en kroont zichzelf tot koning.\nVader Uranus spreekt een vloek over zijn zoon uit, dat hem ooit hetzelfde lot zal beschoren zijn door toedoen van zijn kinderen. Sindsdien leefde Saturnus in angst en telkens als zijn gemalin, Ops, hem een kind baart, vreet hij het op.\nGaia geeft haar de raad om haar volgende kind te verstoppen en zo ontsnapt Jupiter aan het lot van zijn broers en zussen. Met de hulp van de vrijgelaten Cyclopen en de honderdarmige reuzen, dwingt Jupiter zijn vader om de onsterfelijke kinderen die hij verslonden had, terug te geven aan de wereld.</string>
 
     <string name="aarde_moons">1</string>
     <string name="aarde_temperature">-88°C tot 58°C</string>
     <string name="aarde_length_day">23u56m</string>
-    <string name="aarde_orbital_period">365 d</string>
-    <string name="aarde_travel_time_sun">21 j</string>
+    <string name="aarde_orbital_period">365 dagen</string>
+    <string name="aarde_travel_time_sun">21 jaar</string>
 
+    <!-- Mars -->
+    <string name="mars_name">Mars</string>
+    <string name="mars_description">De rode planeet Mars is maar half zo groot als onze aarde. Ze heeft haar kleur te danken aan het ijzer dat in de bodem voorkomt. In combinatie met de zuurstof in de dunne atmosfeer wordt roest geproduceerd. De meest recente onderzoeken van onze buurplaneet, bieden ons steeds meer bewijzen dat er vroeger vloeibaar water moet geweest zijn.\nWe kennen nog enkele reusachtige vulkanen die ooit voor voldoende luchtdruk moeten gezorgd hebben zodat er vloeibaar water kon bestaan. Tegenwoordig is de druk, amper 0,7% van de aardse, zo laag dat water er onmiddellijk zou verdampen. Er is nog geen sluitend bewijs, maar de onderzoekers geraken hoe langer hoe meer overtuigd van de aanwezigheid van grote hoeveelheden waterijs.\nDit gecombineerd met een temperatuur variërend van -80°C tot +20°C, maakt de zoektocht naar kiemen of fossielen van leven des te interessanter. Wordt ongetwijfeld vervolgd ...</string>
+    <string name="mars_statue_name">God van de oorlog</string>
+    <string name="mars_statue_description">Mars is de zoon van Jupiter en Juno. Hij is niet alleen het symbool van de oorlog zelf maar ook van de oorlogszucht. Mars werd met vrees en wantrouwen bekeken door de meeste Olympische goden, maar Venus wordt net verliefd om zijn krachtdadig optreden en zijn vastberadenheid. Op het slagveld werd hij meestal vergezeld door Eris, de twistgodin en door Pluto, de god van de onderwereld.\nMars is onder andere vader van Deimos, de Vrees en van Phobos, de Terreur. Een andere zoon werd tijdens de Trojaanse oorlog gedood door Hercules. Jupiter zelf komt tussenbeide om een wraakactie van Mars te voorkomen. In de vroege Romeinse geschiedenis was Mars de god van de Lente, van de Groei in de Natuur, van de vruchtbaarheid en van het vee.\nDat is ook de reden waarom Maart de eerste maand is in de Oud-Romeinse kalender. Volgens sommige bronnen wordt hij ook aanzien als de vader van Romulus en Remus, de stichters van Rome. De Romeinen noemden zich daarom ook graag "de zonen van Mars".\nHet oorlogszuchtige karakter van deze god werd pas zichtbaar toen de Romeinen zich meer op de Griekse cultuur gingen oriënteren. Een ander aanknopingspunt is dat oorlogshandelingen meestal stilgelegd werden tijdens de winter en pas terug begonnen bij het aanbreken van de lente.</string>
 
+    <string name="mars_moons">2</string>
+    <string name="mars_temperature">-133°C tot 27°C</string>
+    <string name="mars_length_day">24u39m</string>
+    <string name="mars_orbital_period">1 jaar 10 maanden 43 dagen</string>
+    <string name="mars_travel_time_sun">32 jaar</string>
+
+    <!-- Planetoïden -->
+    <string name="planetoiden_name">Ceres</string>
+    <string name="planetoiden_description">Ceres is slechts één voorbeeld van de tienduizenden mini-planeetjes die grotendeels tussen de banen van Mars en Jupiter hun toertjes om de zon maken.\nMen gaat ervan uit dat de brokstukken zich nooit tot een volwaardige planeet hebben kunnen samenvoegen omwille van de getijdewerking van de reuzenplaneet Jupiter. Ceres is de eerste planetoïde die per toeval ontdekt werd door Guiseppe Piazzi in 1801.\nHet brokstuk is net geen 1000 kilometer in diameter. Johannes Bode dacht dat Ceres de vermiste planeet was die men net in dat stuk van het zonnestelsel vermoedde. Vandaar ook dat ze geruime tijd bedacht werd met een planetensymbool.\nPas toen men voortdurend nieuwe brokstukken in die regio begon te ontdekken, kwam men achter de ware aard van Ceres  </string>
+    <string name="planetoiden_statue_name">Ceres, godin van de oogst</string>
+    <string name="planetoiden_statue_description">Ceres is de Romeinse Graangodin, de beschermster van de graanhandel. Haar naam is onder andere terug te vinden in "cereal", het Engelse woord voor graanproduct. Ze werd dikwijls samen met haar dochter Persephone en haar zoon Bacchus vereerd.\nHaar cultus werd zowat 500 jaar voor onze jaartelling opgezet om een einde te maken aan een hongersnood. De priesteressen in haar eredienst legden de basis voor het Romeinse rechtssysteem. Vandaar dat Ceres ook soms de wetgeefster genoemd wordt.</string>
+
+    <string name="planetoiden_moons">0</string>
+    <string name="planetoiden_temperature">-1°C tot 36°C</string>
+    <string name="planetoiden_length_day">9u</string>
+    <string name="planetoiden_orbital_period">4 jaar 7 maanden 6 dagen</string>
+    <string name="planetoiden_travel_time_sun">36 jaar 2 maanden 21 dagen</string>
+
+    <!-- Jupiter -->
+    <string name="jupiter_name">Jupiter</string>
+    <string name="jupiter_description">Jupiter is een reuzenplaneet. Hoewel ze in vergelijking met de zon toch nog heel bescheiden is qua omvang, is ze toch voldoende groot zodat ze meer energie uitstraalt dan ze ontvangt van de zon.\nHet telescoopje van Galileo Galilei toonde hem een viertal maantjes die omheen de statige planeet wentelen. Het bewijs dat er hemellichamen zijn die niet noodzakelijk om de aarde draaien, sterkte zijn overtuiging dat Copernicus wel eens gelijk kon hebben.\nEn dat niet de aarde, maar de zon het centrum van onze planetenfamilie uitmaakt. Jupiter bestaat, net als onze zon, voor het grootste deel uit waterstof. Diep in haar binnenste, zou er vloeibaar metallisch waterstof voorkomen, een exotische substantie die alleen bij een druk van meer dan vier miljoen bar kan voorkomen.\nDe zichtbare buitenkant bestaat uit een dik wolkenpak. Windsnelheden van meer dan 650 km/u en vreemde turbulenties zorgen voor eigenaardige verschijnselen. Reeds in de vroegste telescopen kon men een rode storm waarnemen, die tot de dag van vandaag te zien is. </string>
+    <string name="jupiter_statue_name">Oppergod van hemel en aarde</string>
+    <string name="jupiter_statue_description">Jupiter is de hoogste in het Olympische godenrijk. Hij was de zoon van Saturnus, de god van de tijd. Deze had de gewoonte om zijn kinderen bij hun geboorte te verzwelgen. Toen Jupiter moest geboren worden, ging zijn vrouw zich verstoppen tot na de bevalling.\nBij thuiskomst gaf ze haar echtgenoot een in doeken gewikkelde steen die meteen door hem verzwolgen werd. Jupiter kon ongestoord opgroeien en toen hij oud genoeg was ging hij de strijd om de almacht aan met zijn vader.\nMet behulp van in de onderwereld opgesloten reuzen en Titanen lukte dit nog ook en hij dwong zijn vader om de andere kinderen weer vrij te geven. Met zijn broers dobbelde hij over hun werkterrein. Pluto kreeg de onderwereld, Neptunus mocht zich de god der zeeën noemen en Jupiter kreeg de rest van het universum. Vele mythologische verhalen hebben één of ander verband met de oppergod.\nZoals zijn boodschapper, de arend, kan getuigen, hebben zijn amoureuze uitspattingen voor heel wat wereldlijke en goddelijke opschudding gezorgd.  </string>
+
+    <string name="jupiter_moons">79</string>
+    <string name="jupiter_temperature">-121°C</string>
+    <string name="jupiter_length_day">9u54m</string>
+    <string name="jupiter_orbital_period">11 jaar 10 maanden 10 dagen</string>
+    <string name="jupiter_travel_time_sun">111 jaar</string>
+
+    <!-- Saturnus -->
+    <string name="saturnus_name">Saturnus</string>
+    <string name="saturnus_description">Saturnus is natuurlijk het best gekend door de aanwezigheid van een uitgestrekt ringensysteem om haar evenaar. Ruimtesondes op weg in de diepten van het zonnestelsel, hebben ons kunnen vertellen dat ook de andere reuzenplaneten over dergelijke ringen beschikken.\nDeze ringen bestaan uit een enorme verzameling van donkere brokstukken, die als miljarden maantjes omheen hun moederplaneet wentelen. Bij Saturnus zijn die brokstukken bedekt met waterijs. Dit weerkaatst het zonlicht goed en maakt zo de ringen van Saturnus erg opvallend. De overige maantjes (er zijn er een zestigtal gekend) houden de ringen netjes vlak.\nZe zijn slechts enkele tientallen meter dik, maar strekken zich tot 300 000 km ver uit. Een andere eigenaardigheid van Saturnus is haar kleine dichtheid. Indien je over een voldoende grote waterplas kon beschikken, is Saturnus de enige planeet die je zou kunnen laten drijven.</string>
+    <string name="saturnus_statue_name">Het gouden tijdperk</string>
+    <string name="saturnus_statue_description">Saturnus is één van de oorspronkelijke Titanen, zoon van Uranus en Gaia en zelf vader van de oppergod Jupiter. Saturnus heeft een lange tijd de heerschappij over hemel en aarde gevoerd, nadat hij zijn vader Uranus op een vrij bloederige manier van het wereldtoneel verwijderd had.\nNadat hij zelf door Jupiter en zijn helpers van de troon gestoten was, trok hij zich terug op het Italiaanse platteland waar hij de kunst van het wijnbouwen aan de mensen aanleerde. In de Romeinse kalender nemen de Saturnalia een belangrijke plaats in. Het festival ging door in december en duurde een hele week.\nHet was de tijd dat er geen oorlogen mochten gevoerd worden, dat de slaven behandeld werden als hun meesters en dat executies uitgesteld werden. Sommigen beweren dat de feesten aan de oorsprong liggen van een aantal hedendaagse gebruiken zoals het kerstgebeuren en het geven van cadeautjes aan familie en vrienden.\nDe naam Saturnus zou verband houden met "satus", wat "zaaien" of "planten" betekent. In het Grieks is zijn naam Chronos, wat dus een verband met de tijd inhoudt. Sommige afbeeldingen tonen hem dan ook met een zeis of sikkel en met een zandloper als attribuut van de tijd.</string>
+
+    <string name="saturnus_moons">64</string>
+    <string name="saturnus_temperature">-130°C</string>
+    <string name="saturnus_length_day">10u39m</string>
+    <string name="saturnus_orbital_period">29 jaar 5 maanden 16 dagen</string>
+    <string name="saturnus_travel_time_sun">203 jaar</string>
+
+    <!-- Uranus -->
+    <string name="uranus_name">Uranus</string>
+    <string name="uranus_description">Hoewel Uranus net helder genoeg is om met het blote oog te zien, is het de eerste planeet die niet in de oudheid gekend was en die dus op de komst van de telescoop heeft moeten wachten. Bij ontdekking door William Herschel in de achttiende eeuw, werd ze de Ster van George genoemd, naar de toenmalige Britse koning.\nGelukkig heeft men achteraf besloten om de planeten toch maar in het rijtje van klassieke goden te benoemen. Omdat ze tot op heden enkel in 1986 bezocht werd door Voyager 2, weet men nog niet zo veel over bewegingen in de bovenste wolkenlagen van de gasplaneet.\nZe beweegt zich wel vreemd voort in haar weg om de zon. De rotatie-as is namelijk gekanteld in haar baanvlak waardoor de planeet heel bizarre seizoenen moet kennen.</string>
+    <string name="uranus_statue_name">Personificatie van de hemel</string>
+    <string name="uranus_statue_description">Uranus is één van de vroegste goden die de hemelen van Grieken en Romeinen bevolkten. Gaia, moeder aarde dus, schonk het leven aan Pontos en Uranos, respectievelijk de zee en de hemel. Later trouwde hij met zijn moeder en samen schonken ze het leven aan de Titanen, het eerste ras van mythologische wezens.\nUranus had schrik van zijn kinderen en stopte hen diep weg in de onderwereld. Gaia kon het niet verdragen dat haar kinderen opgesloten werden en met haar hulp kon Saturnus, de jongste van de Titanen, zijn vader overwinnen.\nMet de sikkel die Gaia aan haar zoon geeft, werd Uranus ontmand. Dit betekende de feitelijke scheiding van Gaia en Uranus. Grieken en Romeinen gebruikten deze mythe om de scheiding tussen hemel en aarde uit te leggen.\nHierna speelde Uranus nog weinig mee in de mythologie. Zijn functies als god van de hemel werden later zelfs overgenomen door zijn kleinzoon Jupiter.</string>
+
+    <string name="uranus_moons">27</string>
+    <string name="uranus_temperature">-216°C</string>
+    <string name="uranus_length_day">17u14m</string>
+    <string name="uranus_orbital_period">84 jaar</string>
+    <string name="uranus_travel_time_sun">409 jaar</string>
+
+    <!-- Neptunus -->
+    <string name="neptunus_name">Neptunus</string>
+    <string name="neptunus_description">Neptunus" ontdekking is te danken aan de ijver van de theoretische sterrenkundigen. Het bleek namelijk dat de baan van Uranus afwijkingen vertoonde die alleen door het bestaan van een verder weg gelegen planeet konden verklaard worden.\nMet behulp van het nodige rekenwerk kon Galle in 1846 voor het eerst Neptunus waarnemen. Net als Uranus is ze enkel door Voyager 2 bezocht. In de buitenste wolkenformaties komen windsnelheden voor die verder in het zonnestelsel ongekend zijn.\nEr zijn snelheden gemeten van meer dan 2000km/u Het ringensysteem is opgebouwd uit donkere brokstukken en vormt voor zover we weten geen ononderbroken ring omheen de planeet. </string>
+    <string name="neptunus_statue_name">God van de zee</string>
+    <string name="neptunus_statue_description">Neptunus is één van de zonen van Saturnus. Hij streed aan de zijde van Jupiter mee tegen de tirannie van hun vader. Uit dankbaarheid voor de dappere hulp, deelde Jupiter de wereldheerschappij met zijn broers.\nPluto kreeg de onderwereld en Neptunus kreeg de macht over de zee. In die hoedanigheid kon hij ook stormen doen opsteken of luwen. Daarnaast had hij ook zeggenschap over aardbevingen en over paarden. Omdat de oude Romeinen veel van hun voedsel per schip invoerden, speelde Neptunus een belangrijke rol in het dagelijks leven. Wanneer schippers behouden terugkeerden, offerden ze vaak een kostbaarheid aan hem.\nNeptunus trouwde met de zeenimf Amphitrite en samen kregen ze een zoon, Triton. Deze was half mens en half vis en speelde een voorname rol in vele oude legenden over de zee.</string>
+
+    <string name="neptunus_moons">14</string>
+    <string name="neptunus_temperature">-220°C</string>
+    <string name="neptunus_length_day">16u6m</string>
+    <string name="neptunus_orbital_period">164 jaar 9 maanden 18 dagen</string>
+    <string name="neptunus_travel_time_sun">641 jaar</string>
+
+    <!-- Pluto -->
+    <string name="pluto_name">Pluto</string>
+    <string name="pluto_description">Pluto werd door het ongeziene geduld en doorzettingsvermogen van een amateurastronoom ontdekt. Clyde Tombaugh werd in dienst genomen op het Lowell observatorium om op de vele sterrenfoto"s te zoeken naar bewijzen van een vermoede planeet.\nDit lukte hem uiteindelijk in 1930. De eigenaardige baan van de planeet brengt haar soms tot binnen Neptunus' baan. Pluto werd hoe langer hoe meer beschouwd als een buitenbeentje in de rij van de andere planeten en werd in 2006 officieel een dwergplaneet.\nZelfs met de Hubble Ruimtetelescoop kan men weinig of geen details op het oppervlak zien. Pluto werd in 2015 bezocht door de Amerikaanse ruimtesonde ‘New Horizons’.</string>
+    <string name="pluto_statue_name">God van de onderwereld</string>
+    <string name="pluto_statue_description">Pluto is de god van het dodenrijk. Na de hulp die hij Jupiter geboden had om Saturnus te verslaan, kreeg hij de heerschappij over de onderwereld. Pluto is een blinde god, zodat hij volstrekt onpartijdig zou zijn voor wie zijn dodenrijk betreedt.\nDe zielen van de overledenen worden door Charon, de veerman, over de Styx gevoerd. De doden moeten hem een obol als veergeld betalen. Zonder geld moeten ze honderd jaar aan de oever blijven wachten.\nIs de veerman betaald, dan stompt hij je al schreeuwend de boot in en moet je meeroeien om de halflekke boot over de kolkende rivier te krijgen. Aan de overkant mag de dode drinken uit de bron van Lethe.\nDeze schenkt vergetelheid of lethargis. En dan begint het troosteloze bestaan in het land der doden. Pluto zelf wordt in de onderwereld ondersteund door de driekoppige hond Cerberus. Het is zijn taak om de levenden dreigend op een afstand te houden en de doden te beletten te ontsnappen. Hij is de dood in de gedaante van een hond met vurige ogen, die de lijken verblindt.</string>
+
+    <string name="pluto_moons">5</string>
+    <string name="pluto_temperature">-229°C</string>
+    <string name="pluto_length_day">6 dagen 6 uur</string>
+    <string name="pluto_orbital_period">247 jaar 8 maanden 5 dagen</string>
+    <string name="pluto_travel_time_sun">843 jaar</string>
+
+    <!-- IJsdwergen -->
+    <string name="ijsdwergen_name">De ijsdwergen</string>
+    <string name="ijsdwergen_description">In ons zonnestelsel worden er steeds vaker min of meer grote hemellichamen ontdekt in de ijzige regionen voorbij de planeet Neptunus. Pluto is één van de grotere vertegenwoordigers van deze klasse zogenaamde ijsdwergen.\nAstronomen bedenken de nieuwkomers met exotische namen als Quaoar en Sedna. De verwachtingen zijn dat men in de nabije toekomst nog talloze kleine en verre leden van ons zonnestelsel zal ontdekken.  </string>
+    <string name="ijsdwergen_statue_name">IJsdwergen</string>
+    <string name="ijsdwergen_statue_description">Voor de naamgeving van de nieuw ontdekte ijsdwergen, maakt men gebruik van de rijke mythologieën uit verschillende delen van de wereld. Men beperkt zich dus niet langer tot de Romeinse godenwereld.\nEén van de ijsdwergen werd genoemd naar Sedna, de Inuit godin van de zee. Sedna werd door haar vader uitgehuwelijkt aan een man. Toen de vader spijt had van zijn impulsieve beslissing, wilde hij Sedna helpen ontsnappen aan dit onwaardige huwelijk. Maar tijdens de uitvoering van zijn plan kreeg hij schrik en hij liet Sedna achter in de onmetelijke en ijskoude oceaan. Hier werden de zeehonden en de walvissen haar gezellen. Om haar gunstig te stemmen, moeten de sjamanen naar haar zwemmen en haar lange haren kammen.  </string>
+
+    <string name="ijsdwergen_moons">0</string>
+    <string name="ijsdwergen_temperature">-105°C</string>
+    <string name="ijsdwergen_length_day">6u4m</string>
+    <string name="ijsdwergen_orbital_period">4 jaar 7 maanden 6 dagen</string>
+    <string name="ijsdwergen_travel_time_sun">59 jaar</string>
 
     <!-- TODO: alles hieronder nog herwerken -->
 
@@ -103,131 +232,4 @@
     <string name="login_gewicht">Gewicht</string>
     <string name="login_edittext_naam">Naam</string>
     <string name="login_edittext_gewicht">Gewicht</string>
-
-    //Weetjes pagina //////////////////////////////////////////////////////////////////////////////
-
-    <string name="weetje_omlooptijd_ijsdwergen">4j 7m 6d</string>
-    <string name="weetje_vliegtuid_ijsdwergen">59j</string>
-    <string name="weetje_manen_ijsdwergen">0</string>
-    <string name="weetje_temp_ijsdwergen">-105°c</string>
-    <string name="weetje_dagnacht_ijsdwergen">6u en 4m</string>
-
-    <string name="weetje_omlooptijd_jupiter">11j 10m 10d</string>
-    <string name="weetje_vliegtuid_jupiter">111j</string>
-    <string name="weetje_manen_jupiter">79</string>
-    <string name="weetje_temp_jupiter">-121°c</string>
-    <string name="weetje_dagnacht_jupiter">9u en 54m</string>
-
-    <string name="weetje_omlooptijd_mars">1j 10m 43d</string>
-    <string name="weetje_vliegtuid_mars">32j</string>
-    <string name="weetje_manen_mars">2</string>
-    <string name="weetje_temp_mars">27°c -133°c</string>
-    <string name="weetje_dagnacht_mars">24u 39m</string>
-
-    <string name="weetje_omlooptijd_mercurius">88d</string>
-    <string name="weetje_vliegtuid_mercurius">8 jaar</string>
-    <string name="weetje_manen_mercurius">0</string>
-    <string name="weetje_temp_mercurius">430°C -180°C</string>
-    <string name="weetje_dagnacht_mercurius">58d en 15u</string>
-
-    <string name="weetje_omlooptijd_neptunus">164j 9m 18d</string>
-    <string name="weetje_vliegtuid_neptunus">641j</string>
-    <string name="weetje_manen_neptunus">14</string>
-    <string name="weetje_temp_neptunus">-220°c</string>
-    <string name="weetje_dagnacht_neptunus">16u 6m</string>
-
-    <string name="weetje_omlooptijd_planetoiden">4j 7m 6d</string>
-    <string name="weetje_vliegtuid_planetoiden">36j 2m 21d</string>
-    <string name="weetje_manen_planetoiden">0</string>
-    <string name="weetje_temp_planetoiden">36°c -1°c</string>
-    <string name="weetje_dagnacht_planetoiden">9u</string>
-
-    <string name="weetje_omlooptijd_pluto">247j 8m 5d</string>
-    <string name="weetje_vliegtuid_pluto">843j</string>
-    <string name="weetje_manen_pluto">5</string>
-    <string name="weetje_temp_pluto">-229°c</string>
-    <string name="weetje_dagnacht_pluto">6d en 6u</string>
-
-    <string name="weetje_omlooptijd_saturnus">29j 5m 16d</string>
-    <string name="weetje_vliegtuid_saturnus">203j</string>
-    <string name="weetje_manen_saturnus">64</string>
-    <string name="weetje_temp_saturnus">-130°c</string>
-    <string name="weetje_dagnacht_saturnus">10u en 39m</string>
-
-    <string name="weetje_omlooptijd_uranus">84j</string>
-    <string name="weetje_vliegtuid_uranus">409j</string>
-    <string name="weetje_manen_uranus">27</string>
-    <string name="weetje_temp_uranus">-216°c</string>
-    <string name="weetje_dagnacht_uranus">17u en 14m</string>
-
-    <string name="weetje_omlooptijd_venus">225d</string>
-    <string name="weetje_vliegtuid_venus">15j</string>
-    <string name="weetje_manen_venus">0</string>
-    <string name="weetje_temp_venus">460°c</string>
-    <string name="weetje_dagnacht_venus">243d</string>
-
-    <string name="weetje_omlooptijd_zon"> / </string>
-    <string name="weetje_vliegtuid_zon"> / </string>
-    <string name="weetje_manen_zon"> / </string>
-    <string name="weetje_temp_zon">5,505°C</string>
-    <string name="weetje_dagnacht_zon">27d</string>
-
-    //Home pagina ////////////////////////////////////////////////////////////////////////////////////
-
-    <string name="plan_zon_titel">De zon</string>
-    <string name="plan_zon">De zon is een doodgewone ster, net zoals de vele andere die we "s nachts aan de hemel kunnen zien. Er zijn sterren die groter zijn en er zijn sterren die kleiner zijn dan onze zon. \n Maar in vergelijking met de planeten is de zon gigantisch groot. In de schaal die we hier gebruiken, zou ze een diameter van 8 m hebben, zowat half zo groot als het pleintje voor het kasteel. \n Aan de buitenkant heeft ze een verschroeiende temperatuur van 6000 °C maar naar het midden, loopt dit op tot een onvoorstelbare 15 miljoen °C. Deze hitte zorgt ervoor dat waterstof in de zon versmelt tot helium en hierbij komt een enorme hoeveelheid energie vrij. \n Dankzij deze energie kan het leven op aarde in stand gehouden worden. De zon bevat voldoende waterstof om het nog zo"n vijf miljard jaar uit te houden.\n  </string>
-    <string name="stand_zon">De zon wordt hier voorgesteld door de Vuurvogel. Dit is de mythische feniks, de vogel die zichzelf in vuur liet ten onder gaan om vervolgens te verrijzen uit zijn eigen as. Hierdoor is ze een symbool voor onsterfelijkheid, wederopstanding en het leven na de dood. Wanneer de vogel zijn einde voelt naderen, bouwt hij zich een nest met de fijnste aromatische houtsoorten, steekt dit in brand en wordt verteerd in de vlammen. Hieruit komt dan een nieuwe feniks tevoorschijn, vol van jeugdige kracht.  </string>
-
-    <string name="plan_mercurius_titel">Mercurius</string>
-    <string name="plan_mercurius">Omdat Mercurius van alle planeten het dichtst bij de zon staat, heeft ze ook het minst tijd nodig voor een jaarbeweging. De baan is sterk elliptisch: de afstand tot de zon varieert daarom van 45 tot 70 miljoen kilometer.\nOmdat de planeet driemaal om haar as draait in dezelfde tijd die ze nodig heeft om twee keer om de zon te draaien, zijn er aan het oppervlak vreemde verschijnselen te zien. Op bepaalde plaatsen kan het zijn dat de zon twee keer per dag opkomt! De vreemde baan, de nabijheid bij de zon en het ontbreken van een atmosfeer zorgen ervoor dat de dagtemperatuur kan oplopen tot 430 graden Celsius.\n"s Nachts kan het dan weer afkoelen tot min 180 graden Celsius. Radarwaarnemingen tonen zelfs aan dat er in diepe kraters aan de polen mogelijk bevroren waterijs voorkomt.</string>
-    <string name="stand_mercurius_titel">De behendige boodschapper</string>
-    <string name="stand_mercurius">Mercurius is de god van de handelaars en boodschapper van de goden. Daarnaast heeft hij nog een bijbaantje als god van de welsprekendheid, de uitvindingen, reizigers en dieven. De vleugeltjes aan zijn hoed en schoenen illustreren zijn taak als ijlbode of om zich als god van de dieven vlug uit de voeten te kunnen maken.\nHet lievelingsdier van Mercurius was de haan, een dier dat ook bekend staat om zijn functie als boodschapper. Denk maar aan het Bijbelverhaal waar de haan drie maal kraaide om één en ander duidelijk te maken. Mercurius was nog maar net geboren, of hij ging al aan de haal met een kudde koeien van Apollo.\nUit de ingewanden van de dieren fabriceerde hij de lier en kon het zo toch nog goed maken met de woedende Apollo.</string>
-
-    <string name="plan_venus_titel">Venus</string>
-    <string name="plan_venus">Venus wordt ook wel eens de zusterplaneet van de aarde genoemd. Wat grootte en samenstelling betreft, vertonen beide planeten inderdaad enige overeenkomst. Venus is net als Mercurius een zogenaamde binnenplaneet. Ze beweegt dichter bij de zon dan de aarde en daarom kunnen we haar enkel in de buurt van de zon zien. Het meest verbazende aan de gesluierde planeet is haar dichte atmosfeer.\nDeze bestaat voor het grootste deel uit CO2. Dit houdt de zonnestraling vast waardoor er aan het oppervlak een uit de hand gelopen broeikaseffect optreedt. De temperaturen kunnen hier zelfs hoger oplopen dan bij Mercurius. De luchtdruk is even groot als de druk op duizend meter diepte in een aardse oceaan. Waarnemingen van 10 tot 15 jaar geleden, vertellen ons dat er vulkanisme op Venus voorkwam, misschien zelfs nog tot op de dag van vandaag.</string>
-    <string name="stand_venus_titel">Godin van de liefde</string>
-    <string name="stand_venus">Venus is algemeen gekend als de godin van de liefde. Maar zoals bij vele verhalen uit de oude mythologie, is ze allesbehalve voortgekomen uit liefde. Het verhaal vertelt hoe Chronos, de Griekse Saturnus, in een verschrikkelijke strijd met zijn vader Oceanus verwikkeld was. Met de sikkel die hij van zijn moeder Gaia gekregen had, ontmande Saturnus zijn eigen vader.\nHij wierp het afgesneden lichaamsdeel in de oceaan en het nog aanwezige zaad verspreidde zich uiteindelijk in een cirkel van wit schuim. Uit dit schuim werd tenslotte Venus geboren. Haar Griekse naam, Aphrodite, betekent letterlijk "uit schuim geboren". Hoewel haar voornaamste werkterrein het "zoete der liefde" is, heeft zij toch evenveel miserie en bloedvergieten veroorzaakt als veel van de andere onsterfelijken.  </string>
-
-    <string name="plan_mars_titel">Mars</string>
-    <string name="plan_mars">De rode planeet Mars is maar half zo groot als onze aarde. Ze heeft haar kleur te danken aan het ijzer dat in de bodem voorkomt. In combinatie met de zuurstof in de dunne atmosfeer wordt roest geproduceerd. De meest recente onderzoeken van onze buurplaneet, bieden ons steeds meer bewijzen dat er vroeger vloeibaar water moet geweest zijn.\nWe kennen nog enkele reusachtige vulkanen die ooit voor voldoende luchtdruk moeten gezorgd hebben zodat er vloeibaar water kon bestaan. Tegenwoordig is de druk, amper 0,7% van de aardse, zo laag dat water er onmiddellijk zou verdampen. Er is nog geen sluitend bewijs, maar de onderzoekers geraken hoe langer hoe meer overtuigd van de aanwezigheid van grote hoeveelheden waterijs.\nDit gecombineerd met een temperatuur variërend van -80°C tot +20°C, maakt de zoektocht naar kiemen of fossielen van leven des te interessanter. Wordt ongetwijfeld vervolgd ...</string>
-    <string name="stand_mars_titel">God van de oorlog</string>
-    <string name="stand_mars">Mars is de zoon van Jupiter en Juno. Hij is niet alleen het symbool van de oorlog zelf maar ook van de oorlogszucht. Mars werd met vrees en wantrouwen bekeken door de meeste Olympische goden, maar Venus wordt net verliefd om zijn krachtdadig optreden en zijn vastberadenheid. Op het slagveld werd hij meestal vergezeld door Eris, de twistgodin en door Pluto, de god van de onderwereld.\nMars is onder andere vader van Deimos, de Vrees en van Phobos, de Terreur. Een andere zoon werd tijdens de Trojaanse oorlog gedood door Hercules. Jupiter zelf komt tussenbeide om een wraakactie van Mars te voorkomen. In de vroege Romeinse geschiedenis was Mars de god van de Lente, van de Groei in de Natuur, van de vruchtbaarheid en van het vee.\nDat is ook de reden waarom Maart de eerste maand is in de Oud-Romeinse kalender. Volgens sommige bronnen wordt hij ook aanzien als de vader van Romulus en Remus, de stichters van Rome. De Romeinen noemden zich daarom ook graag "de zonen van Mars".\nHet oorlogszuchtige karakter van deze god werd pas zichtbaar toen de Romeinen zich meer op de Griekse cultuur gingen oriënteren. Een ander aanknopingspunt is dat oorlogshandelingen meestal stilgelegd werden tijdens de winter en pas terug begonnen bij het aanbreken van de lente.</string>
-
-    <string name="plan_planetoid_titel">Ceres</string>
-    <string name="plan_planetoid">Ceres is slechts één voorbeeld van de tienduizenden mini-planeetjes die grotendeels tussen de banen van Mars en Jupiter hun toertjes om de zon maken.\nMen gaat ervan uit dat de brokstukken zich nooit tot een volwaardige planeet hebben kunnen samenvoegen omwille van de getijdewerking van de reuzenplaneet Jupiter. Ceres is de eerste planetoïde die per toeval ontdekt werd door Guiseppe Piazzi in 1801.\nHet brokstuk is net geen 1000 kilometer in diameter. Johannes Bode dacht dat Ceres de vermiste planeet was die men net in dat stuk van het zonnestelsel vermoedde. Vandaar ook dat ze geruime tijd bedacht werd met een planetensymbool.\nPas toen men voortdurend nieuwe brokstukken in die regio begon te ontdekken, kwam men achter de ware aard van Ceres  </string>
-    <string name="stand_planetoid_titel">Ceres, godin van de oogst</string>
-    <string name="stand_planetoid">Ceres is de Romeinse Graangodin, de beschermster van de graanhandel. Haar naam is onder andere terug te vinden in "cereal", het Engelse woord voor graanproduct. Ze werd dikwijls samen met haar dochter Persephone en haar zoon Bacchus vereerd.\nHaar cultus werd zowat 500 jaar voor onze jaartelling opgezet om een einde te maken aan een hongersnood. De priesteressen in haar eredienst legden de basis voor het Romeinse rechtssysteem. Vandaar dat Ceres ook soms de wetgeefster genoemd wordt.</string>
-
-    <string name="plan_jupiter_titel">Jupiter</string>
-    <string name="plan_jupiter">Jupiter is een reuzenplaneet. Hoewel ze in vergelijking met de zon toch nog heel bescheiden is qua omvang, is ze toch voldoende groot zodat ze meer energie uitstraalt dan ze ontvangt van de zon.\nHet telescoopje van Galileo Galilei toonde hem een viertal maantjes die omheen de statige planeet wentelen. Het bewijs dat er hemellichamen zijn die niet noodzakelijk om de aarde draaien, sterkte zijn overtuiging dat Copernicus wel eens gelijk kon hebben.\nEn dat niet de aarde, maar de zon het centrum van onze planetenfamilie uitmaakt. Jupiter bestaat, net als onze zon, voor het grootste deel uit waterstof. Diep in haar binnenste, zou er vloeibaar metallisch waterstof voorkomen, een exotische substantie die alleen bij een druk van meer dan vier miljoen bar kan voorkomen.\nDe zichtbare buitenkant bestaat uit een dik wolkenpak. Windsnelheden van meer dan 650 km/u en vreemde turbulenties zorgen voor eigenaardige verschijnselen. Reeds in de vroegste telescopen kon men een rode storm waarnemen, die tot de dag van vandaag te zien is. </string>
-    <string name="stand_jupiter_titel">Oppergod van hemel en aarde</string>
-    <string name="stand_jupiter">Jupiter is de hoogste in het Olympische godenrijk. Hij was de zoon van Saturnus, de god van de tijd. Deze had de gewoonte om zijn kinderen bij hun geboorte te verzwelgen. Toen Jupiter moest geboren worden, ging zijn vrouw zich verstoppen tot na de bevalling.\nBij thuiskomst gaf ze haar echtgenoot een in doeken gewikkelde steen die meteen door hem verzwolgen werd. Jupiter kon ongestoord opgroeien en toen hij oud genoeg was ging hij de strijd om de almacht aan met zijn vader.\nMet behulp van in de onderwereld opgesloten reuzen en Titanen lukte dit nog ook en hij dwong zijn vader om de andere kinderen weer vrij te geven. Met zijn broers dobbelde hij over hun werkterrein. Pluto kreeg de onderwereld, Neptunus mocht zich de god der zeeën noemen en Jupiter kreeg de rest van het universum. Vele mythologische verhalen hebben één of ander verband met de oppergod.\nZoals zijn boodschapper, de arend, kan getuigen, hebben zijn amoureuze uitspattingen voor heel wat wereldlijke en goddelijke opschudding gezorgd.  </string>
-
-    <string name="plan_saturnus_titel">Saturnus</string>
-    <string name="plan_saturnus">Saturnus is natuurlijk het best gekend door de aanwezigheid van een uitgestrekt ringensysteem om haar evenaar. Ruimtesondes op weg in de diepten van het zonnestelsel, hebben ons kunnen vertellen dat ook de andere reuzenplaneten over dergelijke ringen beschikken.\nDeze ringen bestaan uit een enorme verzameling van donkere brokstukken, die als miljarden maantjes omheen hun moederplaneet wentelen. Bij Saturnus zijn die brokstukken bedekt met waterijs. Dit weerkaatst het zonlicht goed en maakt zo de ringen van Saturnus erg opvallend. De overige maantjes (er zijn er een zestigtal gekend) houden de ringen netjes vlak.\nZe zijn slechts enkele tientallen meter dik, maar strekken zich tot 300 000 km ver uit. Een andere eigenaardigheid van Saturnus is haar kleine dichtheid. Indien je over een voldoende grote waterplas kon beschikken, is Saturnus de enige planeet die je zou kunnen laten drijven.</string>
-    <string name="stand_saturnus_titel">Het gouden tijdperk</string>
-    <string name="stand_saturnus">Saturnus is één van de oorspronkelijke Titanen, zoon van Uranus en Gaia en zelf vader van de oppergod Jupiter. Saturnus heeft een lange tijd de heerschappij over hemel en aarde gevoerd, nadat hij zijn vader Uranus op een vrij bloederige manier van het wereldtoneel verwijderd had.\nNadat hij zelf door Jupiter en zijn helpers van de troon gestoten was, trok hij zich terug op het Italiaanse platteland waar hij de kunst van het wijnbouwen aan de mensen aanleerde. In de Romeinse kalender nemen de Saturnalia een belangrijke plaats in. Het festival ging door in december en duurde een hele week.\nHet was de tijd dat er geen oorlogen mochten gevoerd worden, dat de slaven behandeld werden als hun meesters en dat executies uitgesteld werden. Sommigen beweren dat de feesten aan de oorsprong liggen van een aantal hedendaagse gebruiken zoals het kerstgebeuren en het geven van cadeautjes aan familie en vrienden.\nDe naam Saturnus zou verband houden met "satus", wat "zaaien" of "planten" betekent. In het Grieks is zijn naam Chronos, wat dus een verband met de tijd inhoudt. Sommige afbeeldingen tonen hem dan ook met een zeis of sikkel en met een zandloper als attribuut van de tijd.</string>
-
-    <string name="plan_uranus_titel">Uranus</string>
-    <string name="plan_uranus">Hoewel Uranus net helder genoeg is om met het blote oog te zien, is het de eerste planeet die niet in de oudheid gekend was en die dus op de komst van de telescoop heeft moeten wachten. Bij ontdekking door William Herschel in de achttiende eeuw, werd ze de Ster van George genoemd, naar de toenmalige Britse koning.\nGelukkig heeft men achteraf besloten om de planeten toch maar in het rijtje van klassieke goden te benoemen. Omdat ze tot op heden enkel in 1986 bezocht werd door Voyager 2, weet men nog niet zo veel over bewegingen in de bovenste wolkenlagen van de gasplaneet.\nZe beweegt zich wel vreemd voort in haar weg om de zon. De rotatie-as is namelijk gekanteld in haar baanvlak waardoor de planeet heel bizarre seizoenen moet kennen.</string>
-    <string name="stand_uranus_titel">Personificatie van de hemel</string>
-    <string name="stand_uranus">Uranus is één van de vroegste goden die de hemelen van Grieken en Romeinen bevolkten. Gaia, moeder aarde dus, schonk het leven aan Pontos en Uranos, respectievelijk de zee en de hemel. Later trouwde hij met zijn moeder en samen schonken ze het leven aan de Titanen, het eerste ras van mythologische wezens.\nUranus had schrik van zijn kinderen en stopte hen diep weg in de onderwereld. Gaia kon het niet verdragen dat haar kinderen opgesloten werden en met haar hulp kon Saturnus, de jongste van de Titanen, zijn vader overwinnen.\nMet de sikkel die Gaia aan haar zoon geeft, werd Uranus ontmand. Dit betekende de feitelijke scheiding van Gaia en Uranus. Grieken en Romeinen gebruikten deze mythe om de scheiding tussen hemel en aarde uit te leggen.\nHierna speelde Uranus nog weinig mee in de mythologie. Zijn functies als god van de hemel werden later zelfs overgenomen door zijn kleinzoon Jupiter.</string>
-
-    <string name="plan_neptunus_titel">Neptunus</string>
-    <string name="plan_neptunus">Neptunus" ontdekking is te danken aan de ijver van de theoretische sterrenkundigen. Het bleek namelijk dat de baan van Uranus afwijkingen vertoonde die alleen door het bestaan van een verder weg gelegen planeet konden verklaard worden.\nMet behulp van het nodige rekenwerk kon Galle in 1846 voor het eerst Neptunus waarnemen. Net als Uranus is ze enkel door Voyager 2 bezocht. In de buitenste wolkenformaties komen windsnelheden voor die verder in het zonnestelsel ongekend zijn.\nEr zijn snelheden gemeten van meer dan 2000km/u Het ringensysteem is opgebouwd uit donkere brokstukken en vormt voor zover we weten geen ononderbroken ring omheen de planeet. </string>
-    <string name="stand_neptunus_titel">God van de zee</string>
-    <string name="stad_neptunus">Neptunus is één van de zonen van Saturnus. Hij streed aan de zijde van Jupiter mee tegen de tirannie van hun vader. Uit dankbaarheid voor de dappere hulp, deelde Jupiter de wereldheerschappij met zijn broers.\nPluto kreeg de onderwereld en Neptunus kreeg de macht over de zee. In die hoedanigheid kon hij ook stormen doen opsteken of luwen. Daarnaast had hij ook zeggenschap over aardbevingen en over paarden. Omdat de oude Romeinen veel van hun voedsel per schip invoerden, speelde Neptunus een belangrijke rol in het dagelijks leven. Wanneer schippers behouden terugkeerden, offerden ze vaak een kostbaarheid aan hem.\nNeptunus trouwde met de zeenimf Amphitrite en samen kregen ze een zoon, Triton. Deze was half mens en half vis en speelde een voorname rol in vele oude legenden over de zee.</string>
-
-    <string name="plan_pluto_titel">Pluto</string>
-    <string name="plan_pluto">Pluto werd door het ongeziene geduld en doorzettingsvermogen van een amateurastronoom ontdekt. Clyde Tombaugh werd in dienst genomen op het Lowell observatorium om op de vele sterrenfoto"s te zoeken naar bewijzen van een vermoede planeet.\nDit lukte hem uiteindelijk in 1930. De eigenaardige baan van de planeet brengt haar soms tot binnen Neptunus' baan. Pluto werd hoe langer hoe meer beschouwd als een buitenbeentje in de rij van de andere planeten en werd in 2006 officieel een dwergplaneet.\nZelfs met de Hubble Ruimtetelescoop kan men weinig of geen details op het oppervlak zien. Pluto werd in 2015 bezocht door de Amerikaanse ruimtesonde ‘New Horizons’.</string>
-    <string name="stand_pluto_titel">God van de onderwereld</string>
-    <string name="stand_pluto">Pluto is de god van het dodenrijk. Na de hulp die hij Jupiter geboden had om Saturnus te verslaan, kreeg hij de heerschappij over de onderwereld. Pluto is een blinde god, zodat hij volstrekt onpartijdig zou zijn voor wie zijn dodenrijk betreedt.\nDe zielen van de overledenen worden door Charon, de veerman, over de Styx gevoerd. De doden moeten hem een obol als veergeld betalen. Zonder geld moeten ze honderd jaar aan de oever blijven wachten.\nIs de veerman betaald, dan stompt hij je al schreeuwend de boot in en moet je meeroeien om de halflekke boot over de kolkende rivier te krijgen. Aan de overkant mag de dode drinken uit de bron van Lethe.\nDeze schenkt vergetelheid of lethargis. En dan begint het troosteloze bestaan in het land der doden. Pluto zelf wordt in de onderwereld ondersteund door de driekoppige hond Cerberus. Het is zijn taak om de levenden dreigend op een afstand te houden en de doden te beletten te ontsnappen. Hij is de dood in de gedaante van een hond met vurige ogen, die de lijken verblindt.</string>
-
-    <string name="plan_ijsdwergen_titel">De ijsdwergen</string>
-    <string name="plan_ijsdwergen">In ons zonnestelsel worden er steeds vaker min of meer grote hemellichamen ontdekt in de ijzige regionen voorbij de planeet Neptunus. Pluto is één van de grotere vertegenwoordigers van deze klasse zogenaamde ijsdwergen.\nAstronomen bedenken de nieuwkomers met exotische namen als Quaoar en Sedna. De verwachtingen zijn dat men in de nabije toekomst nog talloze kleine en verre leden van ons zonnestelsel zal ontdekken.  </string>
-    <string name="stand_ijsdwergen_titel">Ijsdwergen</string>
-    <string name="stand_ijsdwergen">Voor de naamgeving van de nieuw ontdekte ijsdwergen, maakt men gebruik van de rijke mythologieën uit verschillende delen van de wereld. Men beperkt zich dus niet langer tot de Romeinse godenwereld.\nEén van de ijsdwergen werd genoemd naar Sedna, de Inuit godin van de zee. Sedna werd door haar vader uitgehuwelijkt aan een man. Toen de vader spijt had van zijn impulsieve beslissing, wilde hij Sedna helpen ontsnappen aan dit onwaardige huwelijk. Maar tijdens de uitvoering van zijn plan kreeg hij schrik en hij liet Sedna achter in de onmetelijke en ijskoude oceaan. Hier werden de zeehonden en de walvissen haar gezellen. Om haar gunstig te stemmen, moeten de sjamanen naar haar zwemmen en haar lange haren kammen.  </string>
-
-
-
 </resources>

@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/plan_venus_titel"
+        android:text="@string/venus_name"
         android:textSize="30sp"
         android:layout_marginTop="100dp"
         android:layout_marginStart="10dp"/>
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="380dp"
         android:layout_height="430dp"
-        android:text="@string/plan_venus"
+        android:text="@string/venus_description"
         android:textSize="16sp"
         android:layout_marginTop="170dp"
         android:layout_marginStart="10dp"

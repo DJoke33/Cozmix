@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class planeetAarde_weetjesFragment extends Fragment {
+public class PlanetTriviaFragment extends Fragment {
+
+    String planetName;
 
     @Nullable
     @Override
@@ -18,23 +20,24 @@ public class planeetAarde_weetjesFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         // inflate fragment view
-        View view = inflater.inflate(R.layout.fragment_aarde_weetjes, null);
+        View view = inflater.inflate(R.layout.fragment_planet_trivia, null);
 
         // prep resource management
         Resources resources = getResources();
         String packageName = getActivity().getPackageName();
+        planetName = getArguments().getString("planet");
 
         // set text resources
         ((TextView)view.findViewById(R.id.planet_moons))
-                .setText(resources.getIdentifier("aarde_moons", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_moons", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_temperature))
-                .setText(resources.getIdentifier("aarde_temperature", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_temperature", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_length_day))
-                .setText(resources.getIdentifier("aarde_length_day", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_length_day", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_orbital_period))
-                .setText(resources.getIdentifier("aarde_orbital_period", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_orbital_period", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_travel_time_sun))
-                .setText(resources.getIdentifier("aarde_travel_time_sun", "string", packageName));
+                .setText(resources.getIdentifier(planetName+"_travel_time_sun", "string", packageName));
 
         return view;
     }

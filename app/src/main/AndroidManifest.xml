@@ -42,7 +42,7 @@
             android:name=".planeetMars"
             android:label="@string/title_activity_planeet_mars" />
         <activity
-            android:name=".planeetAarde"
+            android:name=".PlanetActivity"
             android:label="@string/title_activity_planeet_aarde" />
         <activity
             android:name=".planeetVenus"

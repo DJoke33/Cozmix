@@ -9,71 +9,51 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class ScrollingActivityAndere extends AppCompatActivity {
+public class ScrollingActivityAndere extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling_andere);
 
-        //Status bar doorzichtbaar maken //////////////////////////////////////////////////////////////////////////////////////////
-
+        //Statusbar doorzichtig maken
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
+    }
 
-        FloatingActionButton btnTerug = (FloatingActionButton)findViewById(R.id.fabIjsdwergen);
-        btnTerug.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        Button btnPlanetoiden = (Button)findViewById(R.id.btnPlanetoiden);
-        Button btnMars = (Button)findViewById(R.id.btnMars);
-        Button btnAarde = (Button)findViewById(R.id.btnAarde);
-        Button btnVenus = (Button)findViewById(R.id.btnVenus);
-        Button btnMercurius = (Button)findViewById(R.id.btnMercurius);
-        Button btnZon = (Button)findViewById(R.id.btnZon);
-
-        btnPlanetoiden.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetPlanetoiden.class));
-            }
-        });
-        btnMars.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetMars.class));
-            }
-        });
-        btnAarde.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetAarde.class));
-            }
-        });
-        btnVenus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetVenus.class));
-            }
-        });
-        btnMercurius.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetMercurius.class));
-            }
-        });
-        btnZon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivityAndere.this, planeetZon.class));
-            }
-        });
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnZon:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "zon"));
+                break;
+            case R.id.btnMercurius:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "mercurius"));
+                break;
+            case R.id.btnVenus:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "venus"));
+                break;
+            case R.id.btnAarde:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "aarde"));
+                break;
+            case R.id.btnMars:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "mars"));
+                break;
+            case R.id.btnPlanetoiden:
+                startActivity((new Intent(this, PlanetActivity.class))
+                        .putExtra("planet", "planetoiden"));
+                break;
+            default:
+                break;
+        }
     }
 }

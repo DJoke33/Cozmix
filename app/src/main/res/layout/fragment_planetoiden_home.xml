@@ -18,20 +18,20 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:scaleType="fitXY"
-            android:src="@drawable/plan_ceres2" />
+            android:src="@drawable/planetoiden_image" />
 
         <ImageView
             android:layout_width="232dp"
             android:layout_height="303dp"
             android:layout_marginStart="190dp"
             android:layout_marginTop="0dp"
-            android:src="@drawable/stand_ceres" />
+            android:src="@drawable/planetoiden_standbeeld" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="300dp"
-            android:src="@drawable/sonde_ceres"/>
+            android:src="@drawable/planetoiden_sonde"/>
 
 
     </RelativeLayout>
