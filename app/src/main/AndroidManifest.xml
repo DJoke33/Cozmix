@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sterrenwacht.cozmix">
+
+    <!-- TODO: checken of al het nodige in manifest staat -->
 
     <application
         android:allowBackup="true"
@@ -11,60 +14,20 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ScrollingActivityAndere" />
         <activity
-            android:name=".planeetIjsdwergen"
-            android:label="@string/title_activity_planeet_ijsdwergen" />
-        <activity
-            android:name=".planeetPluto"
-            android:label="@string/title_activity_planeet_Pluto" />
-        <activity
-            android:name=".planeetNeptunus"
-            android:label="@string/title_activity_planeet_neptunus" />
-        <activity
-            android:name=".planeetUranus"
-            android:label="@string/title_activity_planeet_neptunus" />
-        <activity
-            android:name=".planeetSaturnus"
-            android:label="@string/title_activity_planeet_Saturnus" />
-        <activity
-            android:name=".planeetJupiter"
-            android:label="@string/title_activity_planeet_jupiter" />
-        <activity
-            android:name=".planeetPlanetoiden"
-            android:label="@string/title_activity_planeet_planetoiden" />
-        <activity
-            android:name=".planeetMars"
-            android:label="@string/title_activity_planeet_mars" />
-        <activity
             android:name=".PlanetActivity"
-            android:label="@string/title_activity_planeet_aarde" />
-        <activity
-            android:name=".planeetVenus"
-            android:label="@string/title_activity_planeet_venus" />
-        <activity
-            android:name=".planeetMercurius"
-            android:label="@string/title_activity_planeet_mercurius" />
-        <activity
-            android:name=".planeetZon"
-            android:label="@string/title_activity_planeet_zon" />
+            android:label="@string/title_activity_planet" />
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
-
 </manifest>
