@@ -42,7 +42,9 @@ public class PlanetHomeFragment extends Fragment {
 
         // set text resources
         ((TextView)view.findViewById(R.id.planet_name))
-                .setText(resources.getIdentifier(planetName+"_name", "string", packageName));
+                .setText(capitalise(getString(
+                        resources.getIdentifier(planetName+"_name", "string", packageName)
+                )));
         ((TextView) view.findViewById(R.id.planet_description))
                 .setText(resources.getIdentifier(planetName+"_description", "string", packageName));
         ((TextView) view.findViewById(R.id.planet_statue_name))
@@ -51,5 +53,14 @@ public class PlanetHomeFragment extends Fragment {
                 .setText(resources.getIdentifier(planetName+"_statue_description", "string", packageName));
 
         return view;
+    }
+
+    public String capitalise(String s) {
+        if (s == null || s.isEmpty()) {
+            return s;
+        }
+        else {
+            return s.substring(0,1).toUpperCase() + s.substring(1);
+        }
     }
 }

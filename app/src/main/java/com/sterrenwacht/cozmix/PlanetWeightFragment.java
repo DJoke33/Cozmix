@@ -1,6 +1,6 @@
 package com.sterrenwacht.cozmix;
 
-import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,23 +8,70 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.List;
 
 //public class PlanetWeightFragment extends Fragment implements View.OnFocusChangeListener{
 public class PlanetWeightFragment extends Fragment {
 
-    int gewicht;
+    List<Person> persons;
+    String planetName;
+    double planetGravity;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_planet_weight, null);
+        return inflater.inflate(R.layout.fragment_planet_weight, container, false);
     }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+
+        // get resources
+        Resources resources = getResources();
+        String packageName = getActivity().getPackageName();
+
+        planetName = getArguments().getString("planet");
+        planetGravity = Double.parseDouble(
+                getString(resources.getIdentifier(
+                    planetName+"_gravity",
+                    "string",
+                    packageName
+                ))
+        );
+        persons = ((GlobalVariables)getActivity().getApplication()).getPersons();
+
+        ((TextView) view.findViewById(R.id.weight_subtitle))
+                        .setText(String.format(
+                                getString(resources.getIdentifier(
+                                        "gewicht_ondertitel",
+                                        "string",
+                                        packageName)),
+                                getString(resources.getIdentifier(
+                                        planetName+"_name",
+                                        "string",
+                                        packageName))
+                        ));
+
+        // calculate gravity-adjusted weights
+        for (Person p : persons) {
+            p.setWeight(p.getWeight() * planetGravity);
+        }
+
+        // put all persons in listview
+        ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                persons);
+        ListView listPersons = (ListView) getActivity().findViewById(R.id.list_persons);
+        listPersons.setAdapter(listAdapter);
+    }
+
+    // TODO: nakijken welke van onderstaande code bruikbaar is in invoervenster Persons
     /*@Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button btnBereken = (Button) getView().findViewById(R.id.btnBereken);
