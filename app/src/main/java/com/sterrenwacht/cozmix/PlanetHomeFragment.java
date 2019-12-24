@@ -14,9 +14,6 @@ import android.widget.Toast;
 
 public class PlanetHomeFragment extends Fragment {
 
-    // TODO: pluto standbeeld is zelfde als aarde
-    // TODO: geen sonde zon? voorlopig als placeholder sonde mercurius gezet
-
     String planetName;
 
     @Nullable

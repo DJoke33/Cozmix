@@ -7,115 +7,125 @@
 
     <!-- TODO: check relevant text sizes -->
     <!-- TODO: check compatibility with android kitkat - API 19 -->
-    <!-- TODO: adjust strings to be more reusable throughout different planets -->
-    <!-- TODO: titel toevoegen (in overeenstemming met gewicht-pagina en home-pagina -->
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:useDefaultMargins="true">
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:src="@drawable/weetjes_manen"/>
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/trivia_moons" />
-        <TextView
-            android:id="@+id/planet_moons"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:src="@drawable/weetjes_temp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/trivia_temperature" />
-        <TextView
-            android:id="@+id/planet_temperature"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:src="@drawable/weetjes_dagnacht"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/trivia_length_day" />
-        <TextView
-            android:id="@+id/planet_length_day"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:src="@drawable/weetjes_omlooptijd"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/trivia_orbital_period" />
-        <TextView
-            android:id="@+id/planet_orbital_period"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:src="@drawable/weetjes_vliegtuig"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:text="@string/trivia_travel_time_sun" />
-        <TextView
-            android:id="@+id/planet_travel_time_sun"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:gravity="center" />
+            android:id="@+id/planet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp" />
 
-    </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:src="@drawable/weetjes_manen"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:text="@string/trivia_moons" />
+            <TextView
+                android:id="@+id/planet_moons"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:src="@drawable/weetjes_temp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:text="@string/trivia_temperature" />
+            <TextView
+                android:id="@+id/planet_temperature"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:src="@drawable/weetjes_dagnacht"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:text="@string/trivia_length_day" />
+            <TextView
+                android:id="@+id/planet_length_day"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:src="@drawable/weetjes_omlooptijd"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:text="@string/trivia_orbital_period" />
+            <TextView
+                android:id="@+id/planet_orbital_period"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:src="@drawable/weetjes_vliegtuig"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center"
+                android:text="@string/trivia_travel_time_sun" />
+            <TextView
+                android:id="@+id/planet_travel_time_sun"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:gravity="center" />
+
+        </GridLayout>
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

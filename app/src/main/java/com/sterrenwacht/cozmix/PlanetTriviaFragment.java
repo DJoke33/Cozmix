@@ -28,6 +28,10 @@ public class PlanetTriviaFragment extends Fragment {
         planetName = getArguments().getString("planet");
 
         // set text resources
+        ((TextView)view.findViewById(R.id.planet_name))
+                .setText(capitalise(getString(
+                        resources.getIdentifier(planetName+"_name", "string", packageName)
+                )));
         ((TextView)view.findViewById(R.id.planet_moons))
                 .setText(resources.getIdentifier(planetName+"_moons", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_temperature))
@@ -40,5 +44,15 @@ public class PlanetTriviaFragment extends Fragment {
                 .setText(resources.getIdentifier(planetName+"_travel_time_sun", "string", packageName));
 
         return view;
+    }
+
+    // TODO: store this method elsewhere
+    public String capitalise(String s) {
+        if (s == null || s.isEmpty()) {
+            return s;
+        }
+        else {
+            return s.substring(0,1).toUpperCase() + s.substring(1);
+        }
     }
 }

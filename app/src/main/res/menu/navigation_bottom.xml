@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        TODO: naam navigation_pluto aanpassen
-        TODO: typfout vraakteken corrigeren
-    -->
-
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/icon_planeet"
-        android:title="@string/navi_home" />
+        android:title="@string/navigation_home" />
 
     <item
         android:id="@+id/navigation_zwaarte"
         android:icon="@drawable/icon_gewicht"
-        android:title="@string/navi_zwaartekracht" />
+        android:title="@string/navigation_weight" />
 
     <item
         android:id="@+id/navigation_weetjes"
-        android:icon="@drawable/icon_vraakteken"
-        android:title="@string/navi_vraagteken" />
+        android:icon="@drawable/icon_vraagteken"
+        android:title="@string/navigation_trivia" />
 
 </menu>

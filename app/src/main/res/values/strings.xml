@@ -22,6 +22,13 @@
         -->
 
     <!-- APP TEKST -->
+    <!-- Algemeen -->
+    <string name="app_name">Cozmix</string>
+
+    <!-- Navigatiebalk -->
+    <string name="navigation_home">Home</string>
+    <string name="navigation_weight">Zwaartekracht</string>
+    <string name="navigation_trivia">Weetjes</string>
 
     <!-- Gewicht -->
     <string name="gewicht_titel">Gewicht</string>
@@ -195,26 +202,11 @@
 
     <!-- TODO: alles hieronder nog bekijken/herwerken -->
 
-    //Niet veranderen!/////////////////////////////////////////////////////////////////////////////
-    <string name="app_name">Cozmix</string>
-    <string name="title_activity_planet">Planeet</string>
-
-    //navigatie balk////////////////////////////////////////////////////////////////////////////////
-
-    <string name="navi_home">Home</string>
-    <string name="navi_zwaartekracht">Zwaartekracht</string>
-    <string name="navi_vraagteken">Weetjes</string>
-    <string name="navi_algemeen_plan">Planeet</string>
-    <string name="navi_algemeen_stand">Standbeeld</string>
-
-    //Gewicht pagina///////////////////////////////////////////////////////////////////////////////
-
     <string name="Invoer_hint">Geef je gewicht in.</string>
     <string name="button_berekenen">Bereken</string>
-
-    //Login pagina (Niet in gebruik!!)//////////////////////////////////////////////////////////////
 
     <string name="login_gewicht">Gewicht</string>
     <string name="login_edittext_naam">Naam</string>
     <string name="login_edittext_gewicht">Gewicht</string>
+
 </resources>

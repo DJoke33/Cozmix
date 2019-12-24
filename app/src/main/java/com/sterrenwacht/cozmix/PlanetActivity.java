@@ -15,8 +15,10 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
     String planetName;
     Bundle bundle = new Bundle();
 
-    // TODO: mercurius background = maan?
+    // TODO: mercurius background = maan
     // TODO: saturnus background = neptunus
+    // TODO: pluto standbeeld is zelfde als aarde
+    // TODO: geen sonde zon? voorlopig als placeholder sonde mercurius gezet
     // TODO: andere dubbels / ontbrekenden / fouten nakijken
 
     @Override

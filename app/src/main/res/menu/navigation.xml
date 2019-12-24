@@ -4,26 +4,16 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/icon_planeet"
-        android:title="@string/navi_home" />
-
-    <item
-        android:id="@+id/navigation_algemeen_plan"
-        android:icon="@drawable/icon_algemeen"
-        android:title="@string/navi_algemeen_plan" />
-
-    <item
-        android:id="@+id/navigation_algemeen_stand"
-        android:icon="@drawable/icon_algemeen"
-        android:title="@string/navi_algemeen_stand" />
+        android:title="@string/navigation_home" />
 
     <item
         android:id="@+id/navigation_zwaarte"
         android:icon="@drawable/icon_gewicht"
-        android:title="@string/navi_zwaartekracht" />
+        android:title="@string/navigation_weight" />
 
     <item
         android:id="@+id/navigation_weetjes"
-        android:icon="@drawable/icon_vraakteken"
-        android:title="@string/navi_vraagteken" />
+        android:icon="@drawable/icon_vraagteken"
+        android:title="@string/navigation_trivia" />
 
 </menu>
