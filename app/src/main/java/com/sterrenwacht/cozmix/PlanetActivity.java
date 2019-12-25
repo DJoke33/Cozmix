@@ -1,17 +1,26 @@
 package com.sterrenwacht.cozmix;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
-public class PlanetActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class PlanetActivity extends AppCompatActivity
+        implements BottomNavigationView.OnNavigationItemSelectedListener,
+        NavigationView.OnNavigationItemSelectedListener {
 
-    private Fragment fragment = null;
+    Fragment fragment = null;
+    Intent intent = null;
     String planetName;
     Bundle bundle = new Bundle();
 
@@ -25,6 +34,11 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planet);
+
+        // enable navigation drawer
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         // enable bottom navigation panel
         BottomNavigationView navigation = findViewById(R.id.navigation);
@@ -67,7 +81,29 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        fragment = null;
+        intent = null;
+
         switch (menuItem.getItemId()) {
+            // navigation drawer
+            /* TODO: finalise navigation drawer options */
+            case R.id.nav_home:
+                intent = new Intent(this, HomeActivity.class);
+                break;
+            case R.id.nav_planetenpad:
+                intent = new Intent(this, ScrollingActivity.class);
+                break;
+            case R.id.nav_website_cozmix:
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cozmix_website)));
+                break;
+            case R.id.nav_feedback:
+                intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:"));
+                intent.putExtra(Intent.EXTRA_EMAIL, getString(R.string.feedback_email_adres));
+                intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_email_onderwerp));
+                break;
+
+            // bottom navigation
             case R.id.navigation_home:
                 fragment = new PlanetHomeFragment();
                 break;
@@ -78,6 +114,26 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
                 fragment = new PlanetTriviaFragment();
                 break;
         }
-        return ReplaceFragment(fragment);
+
+        if (fragment != null) {
+            ReplaceFragment(fragment);
+        }
+        else if (intent != null) {
+            startActivity(intent);
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 }

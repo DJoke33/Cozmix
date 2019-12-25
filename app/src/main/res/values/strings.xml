@@ -24,8 +24,19 @@
     <!-- APP TEKST -->
     <!-- Algemeen -->
     <string name="app_name">Cozmix</string>
+    <string name="cozmix_website">http://cozmix.be/</string>
 
-    <!-- Navigatiebalk -->
+    <!-- Navigation drawer -->
+    <string name="nav_home">Home</string>
+    <string name="nav_planetenpad">Planetenpad</string>
+    <string name="nav_support">Meer info</string>
+    <string name="nav_website_cozmix">Website Cozmix</string>
+    <string name="nav_feedback">Feedback</string>
+
+    <string name="feedback_email_adres">info@cozmix.be</string>
+    <string name="feedback_email_onderwerp">Feedback app planetenpad</string>
+
+    <!-- Navigatiebalk bottom -->
     <string name="navigation_home">Home</string>
     <string name="navigation_weight">Zwaartekracht</string>
     <string name="navigation_trivia">Weetjes</string>
@@ -41,8 +52,18 @@
     <string name="trivia_orbital_period">Omlooptijd</string>
     <string name="trivia_travel_time_sun">Vliegtuigvlucht (800 km/h) naar de zon</string>
 
+    <!-- TEKST STARTPAGINA -->
+    <!-- Geformatteerd in HTML. Deze tekst moet omgeven worden door de tag met vierkante haken: CDATA -->
+    <string name="introduction_text">
+        <![CDATA[
+            <p>Deze handige app maakt je reis langs het planetenpad van Cozmix interactief!</p>
+            <p>Op het prachtige domein Beisbroek dat rondom het bezoekerscentrum Cozmix gelegen is, kan je een wandeling maken doorheen een schaalmodel van het zonnestelsel. De planeten worden voorgesteld door sculpturen van Jef Claerhout.</p>
+            <p>Elke stap die je zet komt overeen met 9 miljoen kilometer! Het planetenpad vertrekt voor de ingang van Cozmix en het natuurcentrum, ter hoogte van de zon, naast de zonnewijzer. De werkelijke afstand is 835 meter en brengt je langs alle planeten, de planetoïdengordel, Pluto en de IJsdwergen. Wandel langs het planetenpad en ervaar dat de afstand van de zon naar Neptunus 30 keer de afstand aarde - zon is!</p>
+            <p>Niet alleen de afstand tussen de planeten is op schaal voorgesteld, maar ook de grootte van de planeten. Deze schaal is een andere dan die van de afstanden, aangezien de planeten anders minuscule bolletjes zouden zijn. Hier komt 10 centimeter overeen met 18000 kilometer. Elke planeet wordt daarnaast ook voorgesteld door haar mythologische figuur. Zo wordt de planeet Venus bijvoorbeeld weergegeven door de Godin van de Liefde. Zin in deze trektocht doorheen het zonnestelsel?</p>
+        ]]>
+    </string>
 
-    <!-- PLANETEN: TEKST EN INFORMATION -->
+    <!-- PLANETEN: TEKST EN INFORMATIE -->
 
     <!-- Zon -->
     <string name="zon_name">de zon</string>

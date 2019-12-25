@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/round_home_white_24"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_planetenpad"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/nav_planetenpad"
+            android:checked="true"/>
+    </group>
+
+    <item android:title="@string/nav_support">
+        <menu>
+            <item
+                android:id="@+id/nav_website_cozmix"
+                android:icon="@drawable/round_open_in_browser_white_24"
+                android:title="@string/nav_website_cozmix" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/round_feedback_white_24"
+                android:title="@string/nav_feedback" />
+        </menu>
+    </item>
+</menu>
