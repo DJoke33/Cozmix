@@ -48,7 +48,7 @@ public class PlanetWeightFragment extends Fragment {
         ((TextView) view.findViewById(R.id.weight_subtitle))
                         .setText(String.format(
                                 getString(resources.getIdentifier(
-                                        "gewicht_ondertitel",
+                                        "weight_subtitle",
                                         "string",
                                         packageName)),
                                 getString(resources.getIdentifier(

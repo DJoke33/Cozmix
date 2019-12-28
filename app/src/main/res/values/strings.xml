@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- READ ME -->
-    <!-- De namen van planeten en hemellichamen worden ingegeven met/zonder hoofdletters
-        zoals ze in het midden van een zin zouden worden genoteerd. Bv.: "de zon"
-        -->
-    <!-- De gravitatiewaarden moeten worden ingegeven met
-            . (punt) als decimaalteken,
-            geen , (komma),
-        aangezien met deze cijfers berekeningen worden gemaakt in de code.
-        -->
-    <!-- Sommige leestekens hebben in de Android code een specifieke functie. Indien je deze in
-        een tekst of woord wil gebruiken, moeten deze voorafgegaan worden door het
-        escape-karakter: \ (backslash).
+    <!-- READ ME!
+        1. De namen van planeten en hemellichamen worden ingegeven met/zonder hoofdletters
+            zoals ze in het midden van een zin zouden worden ingevuld, bv. "de zon".
 
-        Dit is het geval voor volgende tekens:
-            ' (enkel aanhalingsteken)
-            " (dubbel aanhalingsteken)
-            < (kleiner dan)
-            > (groter dan)
-            & (ampersand)
+        2. De gravitatiewaarden moeten worden ingegeven met
+            punt (.) als decimaalteken,
+            geen komma (,)
+            aangezien met deze cijfers berekeningen worden gemaakt in de code.
+
+        3. Sommige leestekens hebben in de Android code een specifieke functie. Indien je deze in
+            een tekst of woord wil gebruiken, moeten deze voorafgegaan worden door het
+            escape-karakter: backslash (\).
+
+            Dit is het geval voor volgende tekens:
+                ' (enkel aanhalingsteken)
+                " (dubbel aanhalingsteken)
+                < (kleiner dan)
+                > (groter dan)
+                & (ampersand)
         -->
 
     <!-- APP TEKST -->
+
     <!-- Algemeen -->
     <string name="app_name">Cozmix</string>
     <string name="cozmix_website">http://cozmix.be/</string>
@@ -33,24 +34,25 @@
     <string name="nav_website_cozmix">Website Cozmix</string>
     <string name="nav_feedback">Feedback</string>
 
-    <string name="feedback_email_adres">info@cozmix.be</string>
-    <string name="feedback_email_onderwerp">Feedback app planetenpad</string>
+    <string name="feedback_email_address">info@cozmix.be</string>
+    <string name="feedback_email_subject">Feedback app planetenpad</string>
 
-    <!-- Navigatiebalk bottom -->
+    <!-- Navigation bar bottom -->
     <string name="navigation_home">Home</string>
     <string name="navigation_weight">Zwaartekracht</string>
     <string name="navigation_trivia">Weetjes</string>
 
-    <!-- Gewicht -->
-    <string name="gewicht_titel">Gewicht</string>
-    <string name="gewicht_ondertitel">Hoeveel zou jij wegen op %1$s?</string>
+    <!-- Weight fragment -->
+    <string name="weight_title">Gewicht</string>
+    <string name="weight_subtitle">Hoeveel zou jij wegen op %1$s?</string>
 
-    <!-- Trivia -->
+    <!-- Trivia fragment -->
     <string name="trivia_moons">Aantal manen</string>
     <string name="trivia_temperature">Temperatuur</string>
     <string name="trivia_length_day">Lengte van een dag</string>
     <string name="trivia_orbital_period">Omlooptijd</string>
     <string name="trivia_travel_time_sun">Vliegtuigvlucht (800 km/h) naar de zon</string>
+
 
     <!-- TEKST STARTPAGINA -->
     <!-- Geformatteerd in HTML. Deze tekst moet omgeven worden door de tag met vierkante haken: CDATA -->
@@ -62,6 +64,7 @@
             <p>Niet alleen de afstand tussen de planeten is op schaal voorgesteld, maar ook de grootte van de planeten. Deze schaal is een andere dan die van de afstanden, aangezien de planeten anders minuscule bolletjes zouden zijn. Hier komt 10 centimeter overeen met 18000 kilometer. Elke planeet wordt daarnaast ook voorgesteld door haar mythologische figuur. Zo wordt de planeet Venus bijvoorbeeld weergegeven door de Godin van de Liefde. Zin in deze trektocht doorheen het zonnestelsel?</p>
         ]]>
     </string>
+
 
     <!-- PLANETEN: TEKST EN INFORMATIE -->
 
@@ -132,7 +135,7 @@
 
     <!-- Planetoïden -->
     <string name="planetoiden_name">Ceres</string>
-    <string name="planetoiden_description">Ceres is slechts één voorbeeld van de tienduizenden mini-planeetjes die grotendeels tussen de banen van Mars en Jupiter hun toertjes om de zon maken.\nMen gaat ervan uit dat de brokstukken zich nooit tot een volwaardige planeet hebben kunnen samenvoegen omwille van de getijdewerking van de reuzenplaneet Jupiter. Ceres is de eerste planetoïde die per toeval ontdekt werd door Guiseppe Piazzi in 1801.\nHet brokstuk is net geen 1000 kilometer in diameter. Johannes Bode dacht dat Ceres de vermiste planeet was die men net in dat stuk van het zonnestelsel vermoedde. Vandaar ook dat ze geruime tijd bedacht werd met een planetensymbool.\nPas toen men voortdurend nieuwe brokstukken in die regio begon te ontdekken, kwam men achter de ware aard van Ceres  </string>
+    <string name="planetoiden_description">Ceres is slechts één voorbeeld van de tienduizenden mini-planeetjes die grotendeels tussen de banen van Mars en Jupiter hun toertjes om de zon maken.\nMen gaat ervan uit dat de brokstukken zich nooit tot een volwaardige planeet hebben kunnen samenvoegen omwille van de getijdewerking van de reuzenplaneet Jupiter. Ceres is de eerste planetoïde die per toeval ontdekt werd door Giuseppe Piazzi in 1801.\nHet brokstuk is net geen 1000 kilometer in diameter. Johannes Bode dacht dat Ceres de vermiste planeet was die men net in dat stuk van het zonnestelsel vermoedde. Vandaar ook dat ze geruime tijd bedacht werd met een planetensymbool.\nPas toen men voortdurend nieuwe brokstukken in die regio begon te ontdekken, kwam men achter de ware aard van Ceres  </string>
     <string name="planetoiden_statue_name">Ceres, godin van de oogst</string>
     <string name="planetoiden_statue_description">Ceres is de Romeinse Graangodin, de beschermster van de graanhandel. Haar naam is onder andere terug te vinden in "cereal", het Engelse woord voor graanproduct. Ze werd dikwijls samen met haar dochter Persephone en haar zoon Bacchus vereerd.\nHaar cultus werd zowat 500 jaar voor onze jaartelling opgezet om een einde te maken aan een hongersnood. De priesteressen in haar eredienst legden de basis voor het Romeinse rechtssysteem. Vandaar dat Ceres ook soms de wetgeefster genoemd wordt.</string>
 
@@ -220,14 +223,5 @@
     <string name="ijsdwergen_orbital_period">4 jaar 7 maanden 6 dagen</string>
     <string name="ijsdwergen_travel_time_sun">59 jaar</string>
     <string name="ijsdwergen_gravity">0.02753234</string>
-
-    <!-- TODO: alles hieronder nog bekijken/herwerken -->
-
-    <string name="Invoer_hint">Geef je gewicht in.</string>
-    <string name="button_berekenen">Bereken</string>
-
-    <string name="login_gewicht">Gewicht</string>
-    <string name="login_edittext_naam">Naam</string>
-    <string name="login_edittext_gewicht">Gewicht</string>
 
 </resources>

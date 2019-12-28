@@ -2,12 +2,8 @@ package com.sterrenwacht.cozmix;
 
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -26,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
 
-        Button btnLogin = (Button)findViewById(R.id.btnLogin);
+        /*Button btnLogin = (Button)findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +41,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 startActivity(new Intent(LoginActivity.this, ScrollingActivity.class));
             }
-        });
+        });*/
     }
 }

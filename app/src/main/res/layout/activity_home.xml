@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <!-- TODO: make image scrollable -->
+        <!-- TODO: markering actieve activity in navigation drawer werkt niet -->
 
         <ImageView
             android:layout_width="match_parent"

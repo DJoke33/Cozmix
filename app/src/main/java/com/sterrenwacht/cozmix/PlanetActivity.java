@@ -13,7 +13,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class PlanetActivity extends AppCompatActivity
         implements BottomNavigationView.OnNavigationItemSelectedListener,
@@ -23,12 +22,6 @@ public class PlanetActivity extends AppCompatActivity
     Intent intent = null;
     String planetName;
     Bundle bundle = new Bundle();
-
-    // TODO: mercurius background = maan
-    // TODO: saturnus background = neptunus
-    // TODO: pluto standbeeld is zelfde als aarde
-    // TODO: geen sonde zon? voorlopig als placeholder sonde mercurius gezet
-    // TODO: andere dubbels / ontbrekenden / fouten nakijken
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,9 +91,8 @@ public class PlanetActivity extends AppCompatActivity
                 break;
             case R.id.nav_feedback:
                 intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:"));
-                intent.putExtra(Intent.EXTRA_EMAIL, getString(R.string.feedback_email_adres));
-                intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_email_onderwerp));
+                intent.setData(Uri.parse("mailto:"+getString(R.string.feedback_email_address)));
+                intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_email_subject));
                 break;
 
             // bottom navigation
