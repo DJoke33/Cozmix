@@ -91,7 +91,7 @@ public class PlanetActivity extends AppCompatActivity
                 break;
             case R.id.nav_feedback:
                 intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:"+getString(R.string.feedback_email_address)));
+                intent.setData(Uri.parse("mailto:"+getString(R.string.cozmix_email_address)));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_email_subject));
                 break;
 

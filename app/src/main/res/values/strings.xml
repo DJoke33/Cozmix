@@ -26,6 +26,7 @@
     <!-- Algemeen -->
     <string name="app_name">Cozmix</string>
     <string name="cozmix_website">http://cozmix.be/</string>
+    <string name="cozmix_email_address">info@cozmix.be</string>
 
     <!-- Navigation drawer -->
     <string name="nav_home">Home</string>
@@ -34,7 +35,6 @@
     <string name="nav_website_cozmix">Website Cozmix</string>
     <string name="nav_feedback">Feedback</string>
 
-    <string name="feedback_email_address">info@cozmix.be</string>
     <string name="feedback_email_subject">Feedback app planetenpad</string>
 
     <!-- Navigation bar bottom -->
