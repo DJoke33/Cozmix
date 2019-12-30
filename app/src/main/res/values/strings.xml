@@ -34,6 +34,8 @@
     <string name="nav_support">Meer info</string>
     <string name="nav_website_cozmix">Website Cozmix</string>
     <string name="nav_feedback">Feedback</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
 
     <string name="feedback_email_subject">Feedback app planetenpad</string>
 

@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".PlanetActivity"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <!-- TODO: tools:context bekijken -->
-    <!-- TODO: add drawer toggle in actionbar/appbar -->
-    <!-- TODO: locatie van code DrawerLayout + activity code op de goeie plaats zetten -->
-
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".PlanetActivity">
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/navigation"
@@ -43,14 +34,5 @@
                 android:layout_height="match_parent"/>
 
         </LinearLayout>
-    </android.support.constraint.ConstraintLayout>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_nav" />
-
-</android.support.v4.widget.DrawerLayout>
+</android.support.constraint.ConstraintLayout>

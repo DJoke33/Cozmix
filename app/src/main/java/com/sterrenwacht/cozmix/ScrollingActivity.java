@@ -18,7 +18,7 @@ public class ScrollingActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_old);
         setSupportActionBar(toolbar);
 
         //Statusbar doorzichtig maken

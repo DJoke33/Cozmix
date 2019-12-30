@@ -23,7 +23,7 @@
             app:contentScrim="?attr/colorControlHighlight"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:expandedTitleGravity="top"
-            app:toolbarId="@+id/toolbar">
+            app:toolbarId="@+id/toolbar_old">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
                 app:srcCompat="@drawable/toolbar" />
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar_old"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
