@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Fragment fragment = new HomeFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.add(R.id.nav_host_fragment, fragment);
+        ft.commit();
     }
 
     @Override
@@ -44,10 +50,10 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_home:
-                intent = new Intent(this, HomeActivity.class);
+                fragment = new HomeFragment();
                 break;
             case R.id.nav_planetenpad:
-                intent = new Intent(this, ScrollingActivity.class);
+                fragment = new PlanetenpadFragment();
                 break;
             case R.id.nav_website_cozmix:
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cozmix_website)));
@@ -63,8 +69,9 @@ public class MainActivity extends AppCompatActivity
         }
 
         if (fragment != null) {
-            // replace fragment
-            // update code for default switch
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.nav_host_fragment, fragment);
+            ft.commit();
         } else {
             startActivity(intent);
         }

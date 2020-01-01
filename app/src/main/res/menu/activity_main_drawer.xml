@@ -5,12 +5,12 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/round_home_white_24"
-            android:title="@string/nav_home" />
+            android:title="@string/nav_home"
+            android:checked="true" />
         <item
             android:id="@+id/nav_planetenpad"
             android:icon="@android:drawable/ic_dialog_map"
-            android:title="@string/nav_planetenpad"
-            android:checked="true"/>
+            android:title="@string/nav_planetenpad" />
     </group>
 
     <item android:title="@string/nav_support">
