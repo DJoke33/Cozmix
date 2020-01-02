@@ -12,9 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        View.OnClickListener {
+
+    Bundle bundle = new Bundle();
+    String IO = "outer";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +59,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_planetenpad:
                 fragment = new PlanetenpadFragment();
+                IO = "outer";
+                bundle.putString("IO", IO);
+                fragment.setArguments(bundle);
                 break;
             case R.id.nav_website_cozmix:
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cozmix_website)));
@@ -86,8 +94,90 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+        } else if (IO == "inner") {
+            Fragment fragment = new PlanetenpadFragment();
+            IO = "outer";
+            bundle.putString("IO", IO);
+            fragment.setArguments(bundle);
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.planetenpad_host_fragment, fragment);
+            ft.commit();
         } else {
             super.onBackPressed();
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        Fragment fragment = null;
+        Intent intent = null;
+
+        switch (id) {
+            case R.id.btnInnerPlanets:
+                fragment = new PlanetenpadFragment();
+                IO = "inner";
+                bundle.putString("IO", IO);
+                fragment.setArguments(bundle);
+                break;
+            case R.id.btnZon:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "zon");
+                break;
+            case R.id.btnMercurius:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "mercurius");
+                break;
+            case R.id.btnVenus:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "venus");
+                break;
+            case R.id.btnAarde:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "aarde");
+                break;
+            case R.id.btnMars:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "mars");
+                break;
+            case R.id.btnPlanetoiden:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "planetoiden");
+                break;
+            case R.id.btnJupiter:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "jupiter");
+                break;
+            case R.id.btnSaturnus:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "saturnus");
+                break;
+            case R.id.btnUranus:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "uranus");
+                break;
+            case R.id.btnNeptunus:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "neptunus");
+                break;
+            case R.id.btnPluto:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "pluto");
+                break;
+            case R.id.btnIjsdwergen:
+                intent = new Intent(this, PlanetActivity.class);
+                intent.putExtra("planet", "ijsdwergen");
+                break;
+            default:
+                break;
+        }
+
+        if (fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.planetenpad_host_fragment, fragment);
+            ft.commit();
+        } else {
+            startActivity(intent);
         }
     }
 }

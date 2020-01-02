@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 EditText txtGewichtPersoon4 =(EditText)findViewById(R.id.txtGewichtPersoon4);
 
 
-                startActivity(new Intent(LoginActivity.this, ScrollingActivity.class));
+                startActivity(new Intent(LoginActivity.this, PlanetenpadOuterFragment.class));
             }
         });*/
     }
