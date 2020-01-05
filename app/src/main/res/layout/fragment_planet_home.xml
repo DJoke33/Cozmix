@@ -24,7 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/activity_margin" />
+            android:layout_marginTop="@dimen/activity_margin"
+            android:contentDescription="@string/planet_contentDescription" />
 
         <TextView
             android:id="@+id/planet_description"
@@ -38,7 +39,8 @@
             android:id="@+id/planet_probe_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_margin" />
+            android:layout_marginTop="@dimen/activity_margin"
+            android:contentDescription="@string/planet_probe_contentDescription" />
 
         <TextView
             android:id="@+id/planet_statue_name"
@@ -52,7 +54,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/activity_margin" />
+            android:layout_marginTop="@dimen/activity_margin"
+            android:contentDescription="@string/planet_statue_contentDescription" />
 
         <TextView
             android:id="@+id/planet_statue_description"

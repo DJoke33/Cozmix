@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/home_background" />
+            android:src="@drawable/home_background"
+            android:contentDescription="@string/home_background_contentDescription" />
 
         <TextView
             android:id="@+id/home_introduction"

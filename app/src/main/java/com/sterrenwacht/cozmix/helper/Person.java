@@ -1,4 +1,4 @@
-package com.sterrenwacht.cozmix;
+package com.sterrenwacht.cozmix.helper;
 
 import java.text.DecimalFormat;
 

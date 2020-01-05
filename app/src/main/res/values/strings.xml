@@ -44,6 +44,14 @@
     <string name="navigation_weight">Zwaartekracht</string>
     <string name="navigation_trivia">Weetjes</string>
 
+    <!-- Image content descriptions - for accessibility purposes -->
+    <string name="home_background_contentDescription">Introductie</string>
+    <string name="planet_background_contentDescription">Planeet</string>
+    <string name="planet_contentDescription">Planeet</string>
+    <string name="planet_probe_contentDescription">Sonde</string>
+    <string name="planet_statue_contentDescription">Standbeeld</string>
+    <string name="astronaut_contentDescription">Astronaut</string>
+
     <!-- Weight fragment -->
     <string name="weight_title">Gewicht</string>
     <string name="weight_subtitle">Hoeveel zou jij wegen op %1$s?</string>

@@ -6,7 +6,8 @@
     android:padding="@dimen/activity_margin">
 
     <!-- TODO: check relevant text sizes -->
-    <!-- TODO: check compatibility with android kitkat - API 19 -->
+    <!-- TODO: check compatibility with android kitkat - API 19 (see error messages) -->
+    <!-- TODO: rename image resources -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +31,8 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:src="@drawable/weetjes_manen"/>
+                android:src="@drawable/weetjes_manen"
+                android:contentDescription="@string/trivia_moons" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -50,7 +52,8 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:src="@drawable/weetjes_temp"/>
+                android:src="@drawable/weetjes_temp"
+                android:contentDescription="@string/trivia_temperature" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -70,7 +73,8 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:src="@drawable/weetjes_dagnacht"/>
+                android:src="@drawable/weetjes_dagnacht"
+                android:contentDescription="@string/trivia_length_day" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -90,7 +94,8 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:src="@drawable/weetjes_omlooptijd"/>
+                android:src="@drawable/weetjes_omlooptijd"
+                android:contentDescription="@string/trivia_orbital_period" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -110,7 +115,8 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:src="@drawable/weetjes_vliegtuig"/>
+                android:src="@drawable/weetjes_vliegtuig"
+                android:contentDescription="@string/trivia_travel_time_sun" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="100dp"

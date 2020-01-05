@@ -1,4 +1,4 @@
-package com.sterrenwacht.cozmix;
+package com.sterrenwacht.cozmix.planetenpad;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,9 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.sterrenwacht.cozmix.R;
+
 public class PlanetActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    Bundle bundle = new Bundle();
+    private Bundle bundle = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +47,14 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
         }
     }
 
-    private boolean ReplaceFragment(Fragment fragment){
+    private void ReplaceFragment(Fragment fragment){
         if (fragment != null){
             fragment.setArguments(bundle);
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.planet_container, fragment)
                     .commit();
-            return true;
         }
-        return false;
     }
 
     @Override

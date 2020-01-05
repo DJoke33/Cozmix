@@ -9,6 +9,8 @@
     android:focusable="true"
     android:focusableInTouchMode="true">
 
+    <!-- TODO: check correct text sizes (also see error message) -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -50,7 +52,8 @@
                 android:layout_alignParentTop="true"
                 android:src="@drawable/astronaut"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/astronaut_contentDescription" />
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>

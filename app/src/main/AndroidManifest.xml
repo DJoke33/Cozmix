@@ -3,14 +3,14 @@
     package="com.sterrenwacht.cozmix">
 
     <application
-        android:name=".GlobalVariables"
+        android:name=".helper.GlobalVariables"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,8 +20,8 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PlanetenpadInnerFragment" />
-        <activity android:name=".PlanetActivity" />
+        <activity android:name=".main.PlanetenpadInnerFragment" />
+        <activity android:name=".planetenpad.PlanetActivity" />
     </application>
 
 </manifest>

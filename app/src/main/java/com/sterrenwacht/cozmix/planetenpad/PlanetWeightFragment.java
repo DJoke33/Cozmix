@@ -1,4 +1,4 @@
-package com.sterrenwacht.cozmix;
+package com.sterrenwacht.cozmix.planetenpad;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -12,14 +12,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.sterrenwacht.cozmix.R;
+import com.sterrenwacht.cozmix.helper.GlobalVariables;
+import com.sterrenwacht.cozmix.helper.Person;
+
 import java.util.List;
 
-//public class PlanetWeightFragment extends Fragment implements View.OnFocusChangeListener{
 public class PlanetWeightFragment extends Fragment {
-
-    List<Person> persons;
-    String planetName;
-    double planetGravity;
 
     @Nullable
     @Override
@@ -35,15 +34,15 @@ public class PlanetWeightFragment extends Fragment {
         Resources resources = getResources();
         String packageName = getActivity().getPackageName();
 
-        planetName = getArguments().getString("planet");
-        planetGravity = Double.parseDouble(
+        List<Person> persons = ((GlobalVariables) getActivity().getApplication()).getPersons();
+        String planetName = getArguments().getString("planet");
+        double planetGravity = Double.parseDouble(
                 getString(resources.getIdentifier(
-                    planetName+"_gravity",
-                    "string",
-                    packageName
+                        planetName + "_gravity",
+                        "string",
+                        packageName
                 ))
         );
-        persons = ((GlobalVariables)getActivity().getApplication()).getPersons();
 
         ((TextView) view.findViewById(R.id.weight_subtitle))
                         .setText(String.format(
@@ -52,7 +51,7 @@ public class PlanetWeightFragment extends Fragment {
                                         "string",
                                         packageName)),
                                 getString(resources.getIdentifier(
-                                        planetName+"_name",
+                                        planetName +"_name",
                                         "string",
                                         packageName))
                         ));
@@ -67,7 +66,7 @@ public class PlanetWeightFragment extends Fragment {
                 getActivity(),
                 android.R.layout.simple_list_item_1,
                 persons);
-        ListView listPersons = (ListView) getActivity().findViewById(R.id.list_persons);
+        ListView listPersons = getActivity().findViewById(R.id.list_persons);
         listPersons.setAdapter(listAdapter);
     }
 

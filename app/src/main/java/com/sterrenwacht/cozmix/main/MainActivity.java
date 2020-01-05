@@ -1,4 +1,4 @@
-package com.sterrenwacht.cozmix;
+package com.sterrenwacht.cozmix.main;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,12 +14,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.sterrenwacht.cozmix.planetenpad.PlanetActivity;
+import com.sterrenwacht.cozmix.R;
+
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         View.OnClickListener {
 
-    Bundle bundle = new Bundle();
-    String IO = "outer";
+    private Bundle bundle = new Bundle();
+    private String IO = "outer";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +99,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if (IO == "inner") {
+        } else if (Objects.equals(IO, "inner")) {
             Fragment fragment = new PlanetenpadFragment();
             IO = "outer";
             bundle.putString("IO", IO);
