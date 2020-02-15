@@ -37,6 +37,7 @@
     <string name="nav_open_drawer">Open navigation drawer</string>
     <string name="nav_close_drawer">Close navigation drawer</string>
 
+    <string name="manage_astronauts_title">Astronauten aanpassen</string>
     <string name="feedback_email_subject">Feedback app planetenpad</string>
 
     <!-- Navigation bar bottom -->

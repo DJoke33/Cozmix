@@ -26,4 +26,8 @@ public class GlobalVariables extends Application {
     public void addPerson(Person person) {
         this.persons.add(person);
     }
+
+    public void deletePerson(int index) {
+        persons.remove(index);
+    }
 }

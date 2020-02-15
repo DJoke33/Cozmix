@@ -33,8 +33,8 @@ public class PlanetWeightFragment extends Fragment {
         // get resources
         Resources resources = getResources();
         String packageName = getActivity().getPackageName();
-
         List<Person> persons = ((GlobalVariables) getActivity().getApplication()).getPersons();
+
         String planetName = getArguments().getString("planet");
         double planetGravity = Double.parseDouble(
                 getString(resources.getIdentifier(
@@ -56,17 +56,15 @@ public class PlanetWeightFragment extends Fragment {
                                         packageName))
                         ));
 
-        // calculate gravity-adjusted weights
-        for (Person p : persons) {
-            p.setWeight(p.getWeight() * planetGravity);
-        }
+        // create local (planet-specific) copy of persons list
+        List<Person> personsPlanet = Person.planetaryConversion(persons, planetGravity);
 
         // put all persons in listview
         ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(
                 getActivity(),
                 android.R.layout.simple_list_item_1,
-                persons);
-        ListView listPersons = getActivity().findViewById(R.id.list_persons);
+                personsPlanet);
+        ListView listPersons = getActivity().findViewById(R.id.list_personsPlanet);
         listPersons.setAdapter(listAdapter);
     }
 
