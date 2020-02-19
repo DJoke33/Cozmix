@@ -31,37 +31,31 @@ public class AstronautsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = view.getRootView().getContext();
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                final View formView = inflater.inflate(R.layout.astronaut_input_form, null, false);
-                final EditText editTextName= formView.findViewById(R.id.editTxtName);
-                final EditText editTextWeight = formView.findViewById(R.id.editTxtWeight);
+        fab.setOnClickListener(view -> {
+            Context context = view.getRootView().getContext();
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            final View formView = inflater.inflate(R.layout.astronaut_input_form, null, false);
+            final EditText editTextName= formView.findViewById(R.id.editTxtName);
+            final EditText editTextWeight = formView.findViewById(R.id.editTxtWeight);
 
-                new AlertDialog.Builder(context)
-                        .setView(formView)
-                        .setTitle("Create astronaut")
-                        .setPositiveButton("Add",
-                                new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialogInterface, int i) {
-                                        try {
-                                            // get user input
-                                            String name = editTextName.getText().toString();
-                                            double weight = Double.parseDouble(editTextWeight.getText().toString());
-                                            // add astronaut to Global Variables
-                                            ((GlobalVariables) getApplication()).addPerson(new Person(name, weight));
-                                            refreshListView();
-                                        } catch (Exception e) {
-                                            e.printStackTrace();
-                                        }
-                                        dialogInterface.cancel();
-                                    }
-                                })
-                        .show();
-            }
+            new AlertDialog.Builder(context)
+                    .setView(formView)
+                    .setTitle(R.string.create_astronaut_title)
+                    .setPositiveButton(R.string.btn_txt_add,
+                            (dialogInterface, i) -> {
+                                try {
+                                    // get user input
+                                    String name = editTextName.getText().toString();
+                                    double weight = Double.parseDouble(editTextWeight.getText().toString());
+                                    // add astronaut to Global Variables
+                                    ((GlobalVariables) getApplication()).addPerson(new Person(name, weight));
+                                    refreshListView();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                dialogInterface.cancel();
+                            })
+                    .show();
         });
 
         refreshListView();
@@ -73,7 +67,7 @@ public class AstronautsActivity extends AppCompatActivity {
         }*/
     }
 
-    public void refreshListView() {
+    private void refreshListView() {
         List<Person> persons = ((GlobalVariables) getApplication()).getPersons();
         ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(
                 this,
@@ -83,39 +77,29 @@ public class AstronautsActivity extends AppCompatActivity {
         listPersons.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener =
-                new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> adapterView,
-                                            View view,
-                                            int id,
-                                            long l) {
+                (adapterView, view, id, l) -> {
 
-                        // action on listitem click
-                        Context context = view.getRootView().getContext();
-                        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                        final View formView = inflater.inflate(R.layout.astronaut_display_form, null, false);
-                        ((TextView) formView.findViewById(R.id.labelName)).setText(persons.get(id).getName());
-                        ((TextView) formView.findViewById(R.id.labelWeight)).setText(String.valueOf(persons.get(id).getWeight()));
+                    // action on listitem click
+                    Context context = view.getRootView().getContext();
+                    LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    final View formView = inflater.inflate(R.layout.astronaut_display_form, null, false);
+                    ((TextView) formView.findViewById(R.id.labelAstronaut)).setText(persons.get(id).toString());
 
-                        new AlertDialog.Builder(context)
-                                .setView(formView)
-                                .setTitle("Delete astronaut")
-                                .setPositiveButton("Delete",
-                                        new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialogInterface, int i) {
-                                                try {
-                                                    // delete astronaut from Global Variables
-                                                    ((GlobalVariables) getApplication()).deletePerson(id);
-                                                    refreshListView();
-                                                } catch (Exception e) {
-                                                    e.printStackTrace();
-                                                }
-                                                dialogInterface.cancel();
-                                            }
-                                        })
-                                .show();
-                    }
+                    new AlertDialog.Builder(context)
+                            .setView(formView)
+                            .setTitle(R.string.delete_astronaut_title)
+                            .setPositiveButton(R.string.btn_txt_delete,
+                                    (dialogInterface, i) -> {
+                                        try {
+                                            // delete astronaut from Global Variables
+                                            ((GlobalVariables) getApplication()).deletePerson(id);
+                                            refreshListView();
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                        dialogInterface.cancel();
+                                    })
+                            .show();
                 };
         listPersons.setOnItemClickListener(itemClickListener);
     }

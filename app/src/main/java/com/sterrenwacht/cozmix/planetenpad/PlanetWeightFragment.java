@@ -68,7 +68,7 @@ public class PlanetWeightFragment extends Fragment {
         listPersons.setAdapter(listAdapter);
     }
 
-    // TODO: nakijken welke van onderstaande code bruikbaar is in invoervenster Persons
+    // TODO: nakijken welke van onderstaande code bruikbaar is in invoervenster Persons en/of eigen validatie op invoer toevoegen
     /*@Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button btnBereken = (Button) getView().findViewById(R.id.btnBereken);

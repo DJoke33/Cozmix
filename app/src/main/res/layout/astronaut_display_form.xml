@@ -4,18 +4,10 @@
     android:padding="@dimen/activity_margin">
 
     <TextView
-        android:id="@+id/labelName"
+        android:id="@+id/labelAstronaut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"/>
-
-    <TextView
-        android:id="@+id/labelWeight"
-        android:inputType="numberDecimal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/labelName" />
 
 </RelativeLayout>

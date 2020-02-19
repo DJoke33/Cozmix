@@ -8,7 +8,6 @@
     tools:context=".AstronautsActivity">
 
     <!-- TODO: what with appbarlayout? needs to surround the included toolbar? or can i delete it? -->
-    <!-- TODO: titel toevoegen aan activity -->
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -30,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
+            android:contentDescription="@string/planetarium_background_contentDescription"
             android:src="@drawable/toolbar"/>
 
         <ListView

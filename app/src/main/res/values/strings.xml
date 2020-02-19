@@ -25,8 +25,13 @@
 
     <!-- Algemeen -->
     <string name="app_name">Cozmix</string>
+    <string name="organisation_name">Cozmix</string>
+    <string name="organisation_catchphrase">Ruimte voor verwondering</string>
     <string name="cozmix_website">http://cozmix.be/</string>
     <string name="cozmix_email_address">info@cozmix.be</string>
+    <string name="feedback_email_subject">Feedback app planetenpad</string>
+    <string name="btn_txt_add">Toevoegen</string>
+    <string name="btn_txt_delete">Verwijderen</string>
 
     <!-- Navigation drawer -->
     <string name="nav_home">Home</string>
@@ -37,9 +42,6 @@
     <string name="nav_open_drawer">Open navigation drawer</string>
     <string name="nav_close_drawer">Close navigation drawer</string>
 
-    <string name="manage_astronauts_title">Astronauten aanpassen</string>
-    <string name="feedback_email_subject">Feedback app planetenpad</string>
-
     <!-- Navigation bar bottom -->
     <string name="navigation_home">Home</string>
     <string name="navigation_weight">Zwaartekracht</string>
@@ -47,11 +49,20 @@
 
     <!-- Image content descriptions - for accessibility purposes -->
     <string name="home_background_contentDescription">Introductie</string>
+    <string name="planetarium_background_contentDescription">Planetarium</string>
+    <string name="logo_contentDescription">Logo</string>
     <string name="planet_background_contentDescription">Planeet</string>
     <string name="planet_contentDescription">Planeet</string>
     <string name="planet_probe_contentDescription">Sonde</string>
     <string name="planet_statue_contentDescription">Standbeeld</string>
     <string name="astronaut_contentDescription">Astronaut</string>
+
+    <!-- Astronaut activity -->
+    <string name="manage_astronauts_title">Astronauten</string>
+    <string name="create_astronaut_title">Nieuwe astronaut</string>
+    <string name="delete_astronaut_title">Verwijder astronaut</string>
+    <string name="edit_astronaut_hint_name">Naam</string>
+    <string name="edit_astronaut_hint_weight">Gewicht</string>
 
     <!-- Weight fragment -->
     <string name="weight_title">Gewicht</string>

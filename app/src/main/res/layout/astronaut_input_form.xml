@@ -5,11 +5,13 @@
 
     <EditText
         android:id="@+id/editTxtName"
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:hint="Naam">
+        android:hint="@string/edit_astronaut_hint_name"
+        android:importantForAutofill="no">
         <requestFocus />
     </EditText>
 
@@ -20,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editTxtName"
-        android:hint="Gewicht"/>
+        android:hint="@string/edit_astronaut_hint_weight"
+        android:importantForAutofill="no" />
 
 </RelativeLayout>
