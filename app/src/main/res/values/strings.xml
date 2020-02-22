@@ -63,6 +63,7 @@
     <string name="delete_astronaut_title">Verwijder astronaut</string>
     <string name="edit_astronaut_hint_name">Naam</string>
     <string name="edit_astronaut_hint_weight">Gewicht</string>
+    <string name="text_empty_astronaut_list">Voeg astronauten toe met de knop hieronder</string>
 
     <!-- Weight fragment -->
     <string name="weight_title">Gewicht</string>

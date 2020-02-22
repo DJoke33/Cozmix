@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".AstronautsActivity">
 
-    <!-- TODO: what with appbarlayout? needs to surround the included toolbar? or can i delete it? -->
-
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +35,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:id="@+id/text_empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/activity_margin"
+            android:text="@string/text_empty_astronaut_list" />
+
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -46,186 +52,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/activity_margin"
         app:srcCompat="@drawable/baseline_person_add_white_24" />
-
-    <!--
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="150dp">
-
-            <EditText
-                android:id="@+id/txtNaamPersoon1"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="20dp"
-                android:hint="@string/login_edittext_naam"
-                android:inputType="text"
-                android:maxLength="12"
-                android:maxLines="1"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/txtGewichtPersoon1"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="70dp"
-                android:hint="@string/login_edittext_gewicht"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="number"
-                android:maxLength="4" />
-
-            <EditText
-                android:id="@+id/txtNaamPersoon2"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="140dp"
-                android:hint="@string/login_edittext_naam"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="text"
-                android:maxLength="12" />
-
-            <EditText
-                android:id="@+id/txtGewichtPersoon2"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="190dp"
-                android:hint="@string/login_edittext_gewicht"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="number"
-                android:maxLength="4" />
-
-            <EditText
-                android:id="@+id/txtNaamPersoon3"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="270dp"
-                android:hint="@string/login_edittext_naam"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="text"
-                android:maxLength="12" />
-
-            <EditText
-                android:id="@+id/txtGewichtPersoon3"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="320dp"
-                android:hint="@string/login_edittext_gewicht"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="number"
-                android:maxLength="4" />
-
-            <EditText
-                android:id="@+id/txtNaamPersoon4"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="400dp"
-                android:hint="@string/login_edittext_naam"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="text"
-                android:maxLength="12" />
-
-            <EditText
-                android:id="@+id/txtGewichtPersoon4"
-                android:layout_width="215dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="450dp"
-                android:hint="@string/login_edittext_gewicht"
-                android:maxLines="1"
-                android:textAlignment="center"
-                android:inputType="number"
-                android:maxLength="4" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:text="persoon1"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="70dp"
-                android:text="@string/login_gewicht"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="140dp"
-                android:text="persoon2"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="190dp"
-                android:text="@string/login_gewicht"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="270dp"
-                android:text="persoon3"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="320dp"
-                android:text="@string/login_gewicht"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="400dp"
-                android:text="persoon4"
-                android:textSize="25dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="450dp"
-                android:text="@string/login_gewicht"
-                android:textSize="25dp" />
-
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="218dp"
-                android:layout_height="59dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="240dp"
-                android:layout_gravity="center"
-                android:background="@drawable/transparent_bg_bordered_button"
-                android:text="@string/button_berekenen" />
-
-        </FrameLayout>
-    -->
 
 </android.support.design.widget.CoordinatorLayout>
