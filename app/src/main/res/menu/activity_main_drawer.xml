@@ -3,9 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/round_home_white_24"
-            android:title="@string/nav_home"
+            android:id="@+id/nav_introduction"
+            android:icon="@drawable/baseline_info_white_24"
+            android:title="@string/nav_introduction"
             android:checked="true" />
         <item
             android:id="@+id/nav_planetenpad"
