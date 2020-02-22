@@ -22,22 +22,24 @@ public class PlanetTriviaFragment extends Fragment {
         // inflate fragment view
         View view = inflater.inflate(R.layout.fragment_planet_trivia, container, false);
 
-        // prep resource management
-        Resources resources = getResources();
-        String packageName = getActivity().getPackageName();
-        String planetName = getArguments().getString("planet");
+        if (getActivity() != null & getArguments() != null) {
+            // prep resource management
+            Resources resources = getResources();
+            String packageName = getActivity().getPackageName();
+            String planetName = getArguments().getString("planet");
 
-        // set text resources
-        ((TextView)view.findViewById(R.id.planet_moons))
-                .setText(resources.getIdentifier(planetName +"_moons", "string", packageName));
-        ((TextView)view.findViewById(R.id.planet_temperature))
-                .setText(resources.getIdentifier(planetName +"_temperature", "string", packageName));
-        ((TextView)view.findViewById(R.id.planet_length_day))
-                .setText(resources.getIdentifier(planetName +"_length_day", "string", packageName));
-        ((TextView)view.findViewById(R.id.planet_orbital_period))
-                .setText(resources.getIdentifier(planetName +"_orbital_period", "string", packageName));
-        ((TextView)view.findViewById(R.id.planet_travel_time_sun))
-                .setText(resources.getIdentifier(planetName +"_travel_time_sun", "string", packageName));
+            // set text resources
+            ((TextView)view.findViewById(R.id.planet_moons))
+                    .setText(resources.getIdentifier(planetName +"_moons", "string", packageName));
+            ((TextView)view.findViewById(R.id.planet_temperature))
+                    .setText(resources.getIdentifier(planetName +"_temperature", "string", packageName));
+            ((TextView)view.findViewById(R.id.planet_length_day))
+                    .setText(resources.getIdentifier(planetName +"_length_day", "string", packageName));
+            ((TextView)view.findViewById(R.id.planet_orbital_period))
+                    .setText(resources.getIdentifier(planetName +"_orbital_period", "string", packageName));
+            ((TextView)view.findViewById(R.id.planet_travel_time_sun))
+                    .setText(resources.getIdentifier(planetName +"_travel_time_sun", "string", packageName));
+        }
 
         return view;
     }

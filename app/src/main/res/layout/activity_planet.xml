@@ -65,6 +65,6 @@
     android:layout_height="wrap_content"
     android:layout_gravity="end|bottom"
     android:layout_alignParentBottom="true"
-    android:background="@color/cardview_light_background"
+    android:background="@color/colorBackground"
     app:menu="@menu/navigation_bottom"/>
 </RelativeLayout>

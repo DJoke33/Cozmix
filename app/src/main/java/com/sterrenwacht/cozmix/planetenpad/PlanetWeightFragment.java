@@ -20,6 +20,8 @@ import java.util.List;
 
 public class PlanetWeightFragment extends Fragment {
 
+    private double planetGravity;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -28,44 +30,56 @@ public class PlanetWeightFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        // get resources
-        Resources resources = getResources();
-        String packageName = getActivity().getPackageName();
-        List<Person> persons = ((GlobalVariables) getActivity().getApplication()).getPersons();
+        if (getActivity() != null & getArguments() != null) {
+            // get resources
+            Resources resources = getResources();
+            String packageName = getActivity().getPackageName();
 
-        String planetName = getArguments().getString("planet");
-        double planetGravity = Double.parseDouble(
-                getString(resources.getIdentifier(
-                        planetName + "_gravity",
-                        "string",
-                        packageName
-                ))
-        );
+            String planetName = getArguments().getString("planet");
+            planetGravity = Double.parseDouble(
+                    getString(resources.getIdentifier(
+                            planetName + "_gravity",
+                            "string",
+                            packageName
+                    ))
+            );
 
-        ((TextView) view.findViewById(R.id.weight_subtitle))
-                        .setText(String.format(
-                                getString(resources.getIdentifier(
-                                        "weight_subtitle",
-                                        "string",
-                                        packageName)),
-                                getString(resources.getIdentifier(
-                                        planetName +"_name",
-                                        "string",
-                                        packageName))
-                        ));
+            ((TextView) view.findViewById(R.id.weight_subtitle))
+                            .setText(String.format(
+                                    getString(resources.getIdentifier(
+                                            "weight_subtitle",
+                                            "string",
+                                            packageName)),
+                                    getString(resources.getIdentifier(
+                                            planetName +"_name",
+                                            "string",
+                                            packageName))
+                            ));
+        }
 
-        // create local (planet-specific) copy of persons list
-        List<Person> personsPlanet = Person.planetaryConversion(persons, planetGravity);
+        refreshListView();
+    }
 
-        // put all persons in listview
-        ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(
-                getActivity(),
-                android.R.layout.simple_list_item_1,
-                personsPlanet);
-        ListView listPersons = getActivity().findViewById(R.id.list_personsPlanet);
-        listPersons.setAdapter(listAdapter);
+    @Override
+    public void onStart() {
+        super.onStart();
+        refreshListView();
+    }
+
+    private void refreshListView() {
+        if (getActivity() != null) {
+            List<Person> persons = ((GlobalVariables) getActivity().getApplication()).getPersons();
+            List<Person> personsPlanet = Person.planetaryConversion(persons, planetGravity);
+
+            ArrayAdapter<Person> listAdapter = new ArrayAdapter<>(
+                    getActivity(),
+                    android.R.layout.simple_list_item_1,
+                    personsPlanet);
+            ListView listPersons = getActivity().findViewById(R.id.list_personsPlanet);
+            listPersons.setAdapter(listAdapter);
+        }
     }
 
     // TODO: nakijken welke van onderstaande code bruikbaar is in invoervenster Persons en/of eigen validatie op invoer toevoegen

@@ -23,26 +23,28 @@ public class PlanetHomeFragment extends Fragment {
         // inflate fragment view
         View view = inflater.inflate(R.layout.fragment_planet_home, container, false);
 
-        // prep resource management
-        Resources resources = getResources();
-        String packageName = getActivity().getPackageName();
-        String planetName = getArguments().getString("planet");
+        if (getActivity() != null & getArguments() != null) {
+            // prep resource management
+            Resources resources = getResources();
+            String packageName = getActivity().getPackageName();
+            String planetName = getArguments().getString("planet");
 
-        // set image resources
-        ((ImageView) view.findViewById(R.id.planet_image))
-                .setImageResource(resources.getIdentifier(planetName +"_image","drawable", packageName));
-        ((ImageView) view.findViewById(R.id.planet_probe_image))
-                .setImageResource(resources.getIdentifier(planetName +"_sonde", "drawable", packageName));
-        ((ImageView) view.findViewById(R.id.planet_statue_image))
-                .setImageResource(resources.getIdentifier(planetName +"_standbeeld", "drawable", packageName));
+            // set image resources
+            ((ImageView) view.findViewById(R.id.planet_image))
+                    .setImageResource(resources.getIdentifier(planetName +"_image","drawable", packageName));
+            ((ImageView) view.findViewById(R.id.planet_probe_image))
+                    .setImageResource(resources.getIdentifier(planetName +"_sonde", "drawable", packageName));
+            ((ImageView) view.findViewById(R.id.planet_statue_image))
+                    .setImageResource(resources.getIdentifier(planetName +"_standbeeld", "drawable", packageName));
 
-        // set text resources
-        ((TextView) view.findViewById(R.id.planet_description))
-                .setText(resources.getIdentifier(planetName +"_description", "string", packageName));
-        ((TextView) view.findViewById(R.id.planet_statue_name))
-                .setText(resources.getIdentifier(planetName +"_statue_name", "string", packageName));
-        ((TextView) view.findViewById(R.id.planet_statue_description))
-                .setText(resources.getIdentifier(planetName +"_statue_description", "string", packageName));
+            // set text resources
+            ((TextView) view.findViewById(R.id.planet_description))
+                    .setText(resources.getIdentifier(planetName +"_description", "string", packageName));
+            ((TextView) view.findViewById(R.id.planet_statue_name))
+                    .setText(resources.getIdentifier(planetName +"_statue_name", "string", packageName));
+            ((TextView) view.findViewById(R.id.planet_statue_description))
+                    .setText(resources.getIdentifier(planetName +"_statue_description", "string", packageName));
+        }
 
         return view;
     }
