@@ -34,7 +34,7 @@
     <string name="btn_txt_delete">Verwijderen</string>
 
     <!-- Navigation drawer -->
-    <string name="nav_home">Home</string>
+    <string name="nav_introduction">Introductie</string>
     <string name="nav_planetenpad">Planetenpad</string>
     <string name="nav_support">Meer info</string>
     <string name="nav_website_cozmix">Website Cozmix</string>
@@ -48,7 +48,7 @@
     <string name="navigation_trivia">Weetjes</string>
 
     <!-- Image content descriptions - for accessibility purposes -->
-    <string name="home_background_contentDescription">Introductie</string>
+    <string name="planetenpad_background_contentDescription">Introductie</string>
     <string name="planetarium_background_contentDescription">Planetarium</string>
     <string name="logo_contentDescription">Logo</string>
     <string name="planet_background_contentDescription">Planeet</string>

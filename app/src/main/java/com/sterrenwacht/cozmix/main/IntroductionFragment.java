@@ -13,14 +13,14 @@ import android.widget.TextView;
 
 import com.sterrenwacht.cozmix.R;
 
-public class HomeFragment extends Fragment {
+public class IntroductionFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
         // inflate fragment view
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_introduction, container, false);
 
         // set introduction text and format HTML
         TextView textView = view.findViewById(R.id.home_introduction);

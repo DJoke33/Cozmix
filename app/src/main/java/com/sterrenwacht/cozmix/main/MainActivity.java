@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         View.OnClickListener {
 
+    // TODO: verwijder logo om naar astronautenpagina te gaan uit initiële app start
+
     private Bundle bundle = new Bundle();
     private String IO = "outer";
 
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Fragment fragment = new HomeFragment();
+        Fragment fragment = new IntroductionFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.nav_host_fragment, fragment);
         ft.commit();
@@ -61,8 +63,8 @@ public class MainActivity extends AppCompatActivity
         Intent intent = null;
 
         switch (id) {
-            case R.id.nav_home:
-                fragment = new HomeFragment();
+            case R.id.nav_introduction:
+                fragment = new IntroductionFragment();
                 break;
             case R.id.nav_planetenpad:
                 fragment = new PlanetenpadFragment();
