@@ -6,10 +6,12 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.sterrenwacht.cozmix.R;
+import com.sterrenwacht.cozmix.helper.StringHelper;
 
 public class PlanetActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -20,6 +22,10 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planet);
 
+        // enable toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         // enable bottom navigation panel
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
@@ -27,6 +33,9 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
         // get planet name from intent and fill bundle to pass to fragments
         String planetName = getIntent().getStringExtra("planet");
         bundle.putString("planet", planetName);
+
+        // set activity title
+        setTitle(StringHelper.capitalise(planetName));
 
         // set background image
         ((ImageView)findViewById(R.id.planet_background))

@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sterrenwacht.cozmix.R;
-import com.sterrenwacht.cozmix.helper.StringHelper;
 
 public class PlanetTriviaFragment extends Fragment {
 
@@ -29,10 +28,6 @@ public class PlanetTriviaFragment extends Fragment {
         String planetName = getArguments().getString("planet");
 
         // set text resources
-        ((TextView)view.findViewById(R.id.planet_name))
-                .setText(StringHelper.capitalise(getString(
-                        resources.getIdentifier(planetName +"_name", "string", packageName)
-                )));
         ((TextView)view.findViewById(R.id.planet_moons))
                 .setText(resources.getIdentifier(planetName +"_moons", "string", packageName));
         ((TextView)view.findViewById(R.id.planet_temperature))

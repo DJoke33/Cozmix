@@ -6,19 +6,12 @@
     android:padding="@dimen/activity_margin">
 
     <!-- TODO: check relevant text sizes -->
-    <!-- TODO: check compatibility with android kitkat - API 19 (see error messages) -->
     <!-- TODO: rename image resources -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/planet_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp" />
 
         <GridLayout
             android:layout_width="match_parent"

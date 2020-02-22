@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sterrenwacht.cozmix.R;
-import com.sterrenwacht.cozmix.helper.StringHelper;
 
 public class PlanetHomeFragment extends Fragment {
 
@@ -38,10 +37,6 @@ public class PlanetHomeFragment extends Fragment {
                 .setImageResource(resources.getIdentifier(planetName +"_standbeeld", "drawable", packageName));
 
         // set text resources
-        ((TextView)view.findViewById(R.id.planet_name))
-                .setText(StringHelper.capitalise(getString(
-                        resources.getIdentifier(planetName +"_name", "string", packageName)
-                )));
         ((TextView) view.findViewById(R.id.planet_description))
                 .setText(resources.getIdentifier(planetName +"_description", "string", packageName));
         ((TextView) view.findViewById(R.id.planet_statue_name))

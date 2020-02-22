@@ -11,12 +11,6 @@
         android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/planet_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp" />
-
         <!-- TODO: check textview textsize and other properties (see HF Android p.202) -->
 
         <ImageView
