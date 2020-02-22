@@ -1,5 +1,7 @@
 package com.sterrenwacht.cozmix.helper;
 
+import android.support.annotation.NonNull;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ public class Person {
         this.weight = weight;
     }
 
+    @NonNull
     public String toString() {
         DecimalFormat df = new DecimalFormat("0.0");
         return ( this.name + ": " + df.format(this.weight) + " kg");
