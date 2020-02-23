@@ -78,6 +78,8 @@ public class PlanetWeightFragment extends Fragment {
                     android.R.layout.simple_list_item_1,
                     personsPlanet);
             ListView listPersons = getActivity().findViewById(R.id.list_personsPlanet);
+            TextView emptyText = getActivity().findViewById(R.id.text_empty_list);
+            listPersons.setEmptyView(emptyText);
             listPersons.setAdapter(listAdapter);
         }
     }
