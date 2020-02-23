@@ -11,11 +11,10 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.sterrenwacht.cozmix.AstronautsActivity;
+import com.sterrenwacht.cozmix.helper.GlobalVariables;
 import com.sterrenwacht.cozmix.planetenpad.PlanetActivity;
 import com.sterrenwacht.cozmix.R;
 
@@ -24,8 +23,6 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         View.OnClickListener {
-
-    // TODO: verwijder logo om naar astronautenpagina te gaan uit initiële app start
 
     private Bundle bundle = new Bundle();
     private String IO = "outer";
@@ -50,7 +47,26 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Fragment fragment = new IntroductionFragment();
+        // check if first time user / user has seen introduction yet
+        boolean seenIntroduction = ((GlobalVariables) getApplication()).getSeenIntroduction();
+
+        // if so, display planetenpad, if not, display introduction
+        if (seenIntroduction) {
+            navigationView.getMenu().findItem(R.id.nav_planetenpad).setChecked(true);
+        } else {
+            navigationView.getMenu().findItem(R.id.nav_introduction).setChecked(true);
+        }
+
+        Fragment fragment;
+        if(seenIntroduction) {
+            fragment = new PlanetenpadFragment();
+            IO = "outer";
+            bundle.putString("IO", IO);
+            fragment.setArguments(bundle);
+        } else {
+            fragment = new IntroductionFragment();
+        }
+
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.nav_host_fragment, fragment);
         ft.commit();

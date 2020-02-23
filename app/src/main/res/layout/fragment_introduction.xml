@@ -22,6 +22,14 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/activity_margin" />
 
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_margin"
+            android:text="@string/introduction_start" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -1,5 +1,6 @@
 package com.sterrenwacht.cozmix.main;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,9 +10,11 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.sterrenwacht.cozmix.R;
+import com.sterrenwacht.cozmix.helper.GlobalVariables;
 
 public class IntroductionFragment extends Fragment {
 
@@ -31,6 +34,19 @@ public class IntroductionFragment extends Fragment {
             textView.setText(Html.fromHtml(formattedText));
         }
 
+        if (getActivity() != null) {
+            // mark introduction seen as true
+            ((GlobalVariables) getActivity().getApplication()).setSeenIntroduction(true);
+        }
+
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        Button btnStart = view.findViewById(R.id.btnStart);
+        btnStart.setOnClickListener(v -> startActivity(new Intent(getActivity(), MainActivity.class)));
     }
 }

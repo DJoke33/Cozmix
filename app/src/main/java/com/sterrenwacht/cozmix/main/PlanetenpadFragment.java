@@ -18,18 +18,20 @@ public class PlanetenpadFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_planetenpad, container, false);
 
-        String IO = getArguments().getString("IO");
+        if (getActivity() != null & getArguments() != null) {
+            String IO = getArguments().getString("IO");
 
-        if (Objects.equals(IO, "inner")) {
-            Fragment fragment = new PlanetenpadInnerFragment();
-            FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-            ft.add(R.id.planetenpad_host_fragment, fragment);
-            ft.commit();
-        } else {
-            Fragment fragment = new PlanetenpadOuterFragment();
-            FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-            ft.add(R.id.planetenpad_host_fragment, fragment);
-            ft.commit();
+            if (Objects.equals(IO, "inner")) {
+                Fragment fragment = new PlanetenpadInnerFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.add(R.id.planetenpad_host_fragment, fragment);
+                ft.commit();
+            } else {
+                Fragment fragment = new PlanetenpadOuterFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.add(R.id.planetenpad_host_fragment, fragment);
+                ft.commit();
+            }
         }
 
         return view;
