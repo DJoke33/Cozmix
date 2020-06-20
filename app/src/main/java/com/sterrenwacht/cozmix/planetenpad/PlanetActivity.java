@@ -98,13 +98,13 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_manage_astronauts) {
-            Intent intent = new Intent(this, AstronautsActivity.class);
-            startActivity(intent);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        if (item.getItemId() == R.id.action_manage_astronauts) {
+//            Intent intent = new Intent(this, AstronautsActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }
