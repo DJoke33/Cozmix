@@ -40,14 +40,14 @@ public class PlanetActivity extends AppCompatActivity implements BottomNavigatio
         // set activity title
         setTitle(StringHelper.capitalise(planetName));
 
-        // set background image
-        ((ImageView)findViewById(R.id.planet_background))
-                .setImageResource(getResources().getIdentifier(
-                                 planetName+"_background",
-                                "drawable",
-                                getPackageName()
-                        )
-                );
+//        // set background image
+//        ((ImageView)findViewById(R.id.planet_background))
+//                .setImageResource(getResources().getIdentifier(
+//                                 planetName+"_background",
+//                                "drawable",
+//                                getPackageName()
+//                        )
+//                );
 
         // fill planet fragment
         if (savedInstanceState == null) {
