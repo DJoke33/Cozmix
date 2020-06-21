@@ -57,12 +57,11 @@
     <string name="planet_statue_contentDescription">Standbeeld</string>
     <string name="astronaut_contentDescription">Astronaut</string>
 
-    <!-- Astronaut activity -->
-    <string name="manage_astronauts_title">Astronauten</string>
+    <!-- Astronauts -->
     <string name="create_astronaut_title">Nieuwe astronaut</string>
     <string name="delete_astronaut_title">Verwijder astronaut</string>
     <string name="edit_astronaut_hint_name">Naam</string>
-    <string name="edit_astronaut_hint_weight">Gewicht</string>
+    <string name="edit_astronaut_hint_weight">Gewicht op aarde</string>
     <string name="text_empty_astronaut_list">Voeg astronauten toe met de knop hieronder</string>
 
     <!-- Weight fragment -->

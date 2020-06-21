@@ -17,11 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AstronautsActivity"
-            android:label="@string/manage_astronauts_title"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".main.PlanetenpadInnerFragment" />
         <activity android:name=".planetenpad.PlanetActivity" />
     </application>
 
