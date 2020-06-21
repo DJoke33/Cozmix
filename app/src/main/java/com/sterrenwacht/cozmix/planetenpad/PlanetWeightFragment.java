@@ -1,14 +1,19 @@
 package com.sterrenwacht.cozmix.planetenpad;
 
+import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -59,6 +64,32 @@ public class PlanetWeightFragment extends Fragment {
                             ));
         }
 
+        FloatingActionButton fab = view.findViewById(R.id.fab);
+        fab.setOnClickListener(v -> {
+            @SuppressLint("InflateParams") View formView = getLayoutInflater().inflate(R.layout.astronaut_input_form, null);
+            EditText editTextName= formView.findViewById(R.id.editTxtName);
+            EditText editTextWeight = formView.findViewById(R.id.editTxtWeight);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setView(formView)
+                    .setTitle(R.string.create_astronaut_title)
+                    .setPositiveButton(R.string.btn_txt_add,
+                            (dialogInterface, i) -> {
+                                try {
+                                    // get user input
+                                    String name = editTextName.getText().toString();
+                                    double weight = Double.parseDouble(editTextWeight.getText().toString());
+                                    // add astronaut to Global Variables
+                                    ((GlobalVariables) getActivity().getApplication()).addPerson(new Person(name, weight));
+                                    refreshListView();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                dialogInterface.cancel();
+                            })
+                    .show();
+        });
+
         refreshListView();
     }
 
@@ -81,6 +112,30 @@ public class PlanetWeightFragment extends Fragment {
             TextView emptyText = getActivity().findViewById(R.id.text_empty_list);
             listPersons.setEmptyView(emptyText);
             listPersons.setAdapter(listAdapter);
+
+            AdapterView.OnItemClickListener itemClickListener =
+                    (adapterView, view, id, l) -> {
+
+                        @SuppressLint("InflateParams") View formView = getLayoutInflater().inflate(R.layout.astronaut_display_form, null);
+                        ((TextView) formView.findViewById(R.id.labelAstronaut)).setText(persons.get(id).toString());
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                        builder.setView(formView)
+                                .setTitle(R.string.delete_astronaut_title)
+                                .setPositiveButton(R.string.btn_txt_delete,
+                                        (dialogInterface, i) -> {
+                                            try {
+                                                // delete astronaut from Global Variables
+                                                ((GlobalVariables) getActivity().getApplication()).deletePerson(id);
+                                                refreshListView();
+                                            } catch (Exception e) {
+                                                e.printStackTrace();
+                                            }
+                                            dialogInterface.cancel();
+                                        })
+                                .show();
+                    };
+            listPersons.setOnItemClickListener(itemClickListener);
         }
     }
 

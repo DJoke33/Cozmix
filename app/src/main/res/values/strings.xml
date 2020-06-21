@@ -67,7 +67,7 @@
 
     <!-- Weight fragment -->
     <string name="weight_subtitle" tools:keep="@string/weight_subtitle">Hoeveel zou jij wegen op %1$s?</string>
-    <string name="text_empty_weight_list">Voeg astronauten toe met de knop rechtsboven</string>
+    <string name="text_empty_weight_list">Voeg astronauten toe met de knop rechtsonder</string>
 
     <!-- Trivia fragment -->
     <string name="trivia_moons">Aantal manen</string>
