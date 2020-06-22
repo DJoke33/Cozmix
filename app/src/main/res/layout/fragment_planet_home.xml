@@ -11,8 +11,6 @@
         android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
-        <!-- TODO: check textview textsize and other properties (see HF Android p.202) -->
-
         <ImageView
             android:id="@+id/planet_image"
             android:layout_width="wrap_content"
@@ -25,9 +23,9 @@
             android:id="@+id/planet_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14.5sp"
-            android:layout_marginTop="@dimen/activity_margin"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:textSize="@dimen/text_body"
+            android:lineSpacingMultiplier="@dimen/line_spacer_multiplier_body"
+            android:layout_marginTop="@dimen/activity_margin" />
 
         <ImageView
             android:id="@+id/planet_probe_image"
@@ -41,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_margin"
-            android:textSize="30sp" />
+            android:textSize="@dimen/text_title" />
 
         <ImageView
             android:id="@+id/planet_statue_image"
@@ -55,9 +53,9 @@
             android:id="@+id/planet_statue_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12.5sp"
-            android:layout_marginTop="@dimen/activity_margin"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:textSize="@dimen/text_body"
+            android:lineSpacingMultiplier="@dimen/line_spacer_multiplier_body"
+            android:layout_marginTop="@dimen/activity_margin" />
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
